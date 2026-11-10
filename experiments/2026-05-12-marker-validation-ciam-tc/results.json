@@ -1,0 +1,342 @@
+{
+  "files": {
+    "gt": "draft_codes\\ocr_validation_results\\content\\output_md\\wo-exercises_ground_truth_extract_ciam_tc.md",
+    "pred": "draft_codes\\ocr_validation_results\\content\\output_md\\extract_ciam_tc\\extract_ciam_tc.md"
+  },
+  "params": {
+    "min_match_similarity": 0.3,
+    "worst_n": 20
+  },
+  "text": {
+    "cer": 0.1151459131123729,
+    "wer": 0.14395527603074773,
+    "gt_chars": 15146,
+    "pred_chars": 16833
+  },
+  "equations": {
+    "detection": {
+      "gt_count": 408,
+      "pred_count": 361,
+      "matched": 335,
+      "missing": 73,
+      "hallucinated": 26,
+      "precision": 0.9279778393351801,
+      "recall": 0.821078431372549,
+      "f1": 0.871261378413524
+    },
+    "matched_accuracy": {
+      "exact_match_rate": 0.8746268656716418,
+      "high_similarity_rate": 0.8955223880597015,
+      "mean_similarity": 0.973321928136616,
+      "median_similarity": 1.0,
+      "p25_similarity": 1.0,
+      "p75_similarity": 1.0
+    }
+  },
+  "worst_pairs": [
+    {
+      "gt_idx": 302,
+      "pred_idx": 282,
+      "similarity": 0.3157894736842105,
+      "gt": "r_{2} \\circ r_{1}",
+      "pred": "r_{(O, \\frac{\\pi}{O})} \\circ t_{\\overrightarrow{BO}}"
+    },
+    {
+      "gt_idx": 301,
+      "pred_idx": 259,
+      "similarity": 0.3529411764705882,
+      "gt": "r_{2} \\circ r_{1}",
+      "pred": "s_{(AC)} \\circ r_{(A, \\frac{\\pi}{2})}"
+    },
+    {
+      "gt_idx": 199,
+      "pred_idx": 180,
+      "similarity": 0.48888888888888893,
+      "gt": "t_{\\vec{u}} \\circ s_{\\Delta}",
+      "pred": "\\mathbf{t}_{\\vec{u}} \\circ \\mathbf{s}_{\\Lambda}"
+    },
+    {
+      "gt_idx": 336,
+      "pred_idx": 305,
+      "similarity": 0.5,
+      "gt": " A = A'",
+      "pred": "-Si\\ A = A'"
+    },
+    {
+      "gt_idx": 257,
+      "pred_idx": 226,
+      "similarity": 0.56,
+      "gt": "(\\mathfrak{D})",
+      "pred": "\\mathcal{L}(\\mathfrak{D})"
+    },
+    {
+      "gt_idx": 292,
+      "pred_idx": 251,
+      "similarity": 0.6,
+      "gt": "t \\circ r = s_{\\Delta'} \\circ s_{\\Delta}",
+      "pred": "t \\circ r = s_{\\Lambda} \\cdot \\circ s_{\\Lambda}"
+    },
+    {
+      "gt_idx": 256,
+      "pred_idx": 225,
+      "similarity": 0.625,
+      "gt": "t \\circ r = s_{\\Delta} \\circ s_{\\Delta}",
+      "pred": "t \\circ r = s_{\\Lambda} \\cdot \\circ s_{\\Lambda}"
+    },
+    {
+      "gt_idx": 35,
+      "pred_idx": 35,
+      "similarity": 0.65,
+      "gt": "- 81 \\equiv 0 [9]",
+      "pred": "\\bullet - 81 \\equiv 0 [9]"
+    },
+    {
+      "gt_idx": 156,
+      "pred_idx": 145,
+      "similarity": 0.6666666666666667,
+      "gt": "(\\Delta')",
+      "pred": "\\Delta"
+    },
+    {
+      "gt_idx": 323,
+      "pred_idx": 295,
+      "similarity": 0.6774193548387097,
+      "gt": "\\overhat{(\\overrightarrow{AB}, \\overrightarrow{A'B'})}",
+      "pred": "(\\overrightarrow{AB}, \\overrightarrow{A'B'})"
+    },
+    {
+      "gt_idx": 137,
+      "pred_idx": 133,
+      "similarity": 0.6857142857142857,
+      "gt": "x \\equiv \\sum_{k=0}^{p} (-1)^k a_k\\ [11]",
+      "pred": "x = \\sum_{k=0}^{p} (-1)^k a_k"
+    },
+    {
+      "gt_idx": 63,
+      "pred_idx": 63,
+      "similarity": 0.7073170731707317,
+      "gt": "a : a \\equiv a' [n] \\Rightarrow a^k \\equiv a'^k [n]",
+      "pred": "a : a = a' [n] \\Rightarrow a^k = a'^k [n]"
+    },
+    {
+      "gt_idx": 142,
+      "pred_idx": 138,
+      "similarity": 0.75,
+      "gt": "(\\Delta)",
+      "pred": "\\Delta"
+    },
+    {
+      "gt_idx": 144,
+      "pred_idx": 139,
+      "similarity": 0.75,
+      "gt": "(\\Delta)",
+      "pred": "\\Delta"
+    },
+    {
+      "gt_idx": 147,
+      "pred_idx": 140,
+      "similarity": 0.75,
+      "gt": "(\\Delta)",
+      "pred": "\\Delta"
+    },
+    {
+      "gt_idx": 150,
+      "pred_idx": 141,
+      "similarity": 0.75,
+      "gt": "(\\Delta)",
+      "pred": "\\Delta"
+    },
+    {
+      "gt_idx": 155,
+      "pred_idx": 144,
+      "similarity": 0.75,
+      "gt": "(\\Delta)",
+      "pred": "\\Delta"
+    },
+    {
+      "gt_idx": 269,
+      "pred_idx": 237,
+      "similarity": 0.7560975609756098,
+      "gt": "2\\widehat{(\\vec{v}, \\vec{w})} = \\hat{\\alpha}",
+      "pred": "2(\\vec{v}, \\vec{w}) = \\hat{\\alpha}"
+    },
+    {
+      "gt_idx": 196,
+      "pred_idx": 177,
+      "similarity": 0.8148148148148149,
+      "gt": "t_{\\vec{u}} \\circ s_{\\Delta}",
+      "pred": "t_{\\vec{u}} \\circ s_{\\Lambda}"
+    },
+    {
+      "gt_idx": 183,
+      "pred_idx": 165,
+      "similarity": 0.8181818181818181,
+      "gt": "t_{\\vec{u}} \\circ s_{\\Delta} = s_{\\Delta} \\circ t_{\\vec{u}}",
+      "pred": "t_{\\vec{u}} \\circ s_{\\Lambda} = s_{\\Lambda} \\circ t_{\\vec{u}}"
+    }
+  ],
+  "unmatched_gt_samples": [
+    {
+      "idx": 65,
+      "eq": "a \\equiv 12 [25]"
+    },
+    {
+      "idx": 66,
+      "eq": "b \\equiv -2 [25]"
+    },
+    {
+      "idx": 67,
+      "eq": "a + b \\equiv 10 [25]"
+    },
+    {
+      "idx": 79,
+      "eq": "7^{2002}"
+    },
+    {
+      "idx": 143,
+      "eq": "(\\Delta')"
+    },
+    {
+      "idx": 145,
+      "eq": "(\\Delta')"
+    },
+    {
+      "idx": 146,
+      "eq": "s_{\\Delta'} \\circ s_{\\Delta}"
+    },
+    {
+      "idx": 148,
+      "eq": "(\\Delta')"
+    },
+    {
+      "idx": 149,
+      "eq": "2\\overrightarrow{OO'}"
+    },
+    {
+      "idx": 151,
+      "eq": "(\\Delta')"
+    },
+    {
+      "idx": 154,
+      "eq": "s_{\\Delta'} \\circ s_{\\Delta}"
+    },
+    {
+      "idx": 176,
+      "eq": "M_1"
+    },
+    {
+      "idx": 177,
+      "eq": "t_{\\vec{u}}"
+    },
+    {
+      "idx": 178,
+      "eq": "M_1"
+    },
+    {
+      "idx": 179,
+      "eq": "s_{\\Delta}"
+    },
+    {
+      "idx": 180,
+      "eq": "M_2"
+    },
+    {
+      "idx": 181,
+      "eq": "s_{\\Delta}"
+    },
+    {
+      "idx": 182,
+      "eq": "t_{\\vec{u}}(M_2) = M'"
+    },
+    {
+      "idx": 184,
+      "eq": "s_{\\Delta}"
+    },
+    {
+      "idx": 205,
+      "eq": "s_{\\Delta'} \\circ s_{\\Delta} = t_{\\overrightarrow{HA}}"
+    }
+  ],
+  "unmatched_pred_samples": [
+    {
+      "idx": 256,
+      "eq": "\\begin{array}{c|ccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "idx": 257,
+      "eq": "(BH) \\perp (CG)"
+    },
+    {
+      "idx": 258,
+      "eq": "f = s_{(AD)} \\circ s_{(CD)} \\circ s_{(BC)} \\circ s_{(AB)}"
+    },
+    {
+      "idx": 260,
+      "eq": "\\Gamma_{(D,\\frac{\\pi}{2})} \\circ \\Gamma_{(A,\\frac{\\pi}{2})}"
+    },
+    {
+      "idx": 261,
+      "eq": "r_{(C,-\\frac{\\pi}{2})} \\circ r_{(A,\\frac{\\pi}{2})}"
+    },
+    {
+      "idx": 262,
+      "eq": "\\begin{array}{ccc} b) & \\mathbf{r}_{(D, \\frac{\\pi}{2})} \\circ \\mathbf{r}_{(A, \\frac{\\pi}{2})} \\\\ d) & \\mathbf{r}_{(A, \\frac{\\pi}{2})} \\circ \\mathbf{t}_{\\overrightarrow{CB}}. \\end{array}"
+    },
+    {
+      "idx": 263,
+      "eq": "(O, \\vec{t}, \\vec{f})"
+    },
+    {
+      "idx": 264,
+      "eq": "x = 4"
+    },
+    {
+      "idx": 265,
+      "eq": "x = y"
+    },
+    {
+      "idx": 266,
+      "eq": "(\\mathfrak{D}'): x = y"
+    },
+    {
+      "idx": 267,
+      "eq": "\\mathfrak{D}"
+    },
+    {
+      "idx": 268,
+      "eq": "x - y = 1"
+    },
+    {
+      "idx": 269,
+      "eq": "\\mathfrak{D}"
+    },
+    {
+      "idx": 270,
+      "eq": "x + y = 1"
+    },
+    {
+      "idx": 271,
+      "eq": "(9) \\cdot r + y ="
+    },
+    {
+      "idx": 272,
+      "eq": "\\mathfrak{D}"
+    },
+    {
+      "idx": 273,
+      "eq": "y = -1"
+    },
+    {
+      "idx": 274,
+      "eq": "\\mathfrak{D}"
+    },
+    {
+      "idx": 275,
+      "eq": "y = 2"
+    },
+    {
+      "idx": 276,
+      "eq": "(\\mathfrak{D}'): u = 2"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "files": {
+    "gt": "C:\\Users\\emman\\OneDrive\\Bureau\\DSB COURSES\\DSB YEAR 2\\29 - research paper\\code-for-the-thesis\\draft_codes\\ocr_validation_results\\content\\output_md\\wo-exercises_ground_truth_extract_ciam_tc.md",
+    "pred": "C:\\Users\\emman\\OneDrive\\Bureau\\DSB COURSES\\DSB YEAR 2\\29 - research paper\\code-for-the-thesis\\draft_codes\\ocr_validation_results\\content\\output_md\\extract_ciam_tc\\docling_output.md"
+  },
+  "params": {
+    "min_match_similarity": 0.3,
+    "worst_n": 20
+  },
+  "text": {
+    "cer": 1.0268244575936885,
+    "wer": 1.3310297166551486,
+    "gt_chars": 15210,
+    "pred_chars": 30173
+  },
+  "equations": {
+    "detection": {
+      "gt_count": 408,
+      "pred_count": 2,
+      "matched": 1,
+      "missing": 407,
+      "hallucinated": 1,
+      "precision": 0.5,
+      "recall": 0.0024509803921568627,
+      "f1": 0.004878048780487805
+    },
+    "matched_accuracy": {
+      "exact_match_rate": 0.0,
+      "high_similarity_rate": 0.0,
+      "mean_similarity": 0.30000000000000004,
+      "median_similarity": 0.30000000000000004,
+      "p25_similarity": null,
+      "p75_similarity": null
+    }
+  },
+  "worst_pairs": [
+    {
+      "gt_idx": 312,
+      "pred_idx": 0,
+      "similarity": 0.30000000000000004,
+      "gt": "s \\circ f(A) = s(A) = A",
+      "pred": "= s(ABJos 6 et r(A, ~) = s(ACJos 1 ABJ'"
+    }
+  ],
+  "unmatched_gt_samples": [
+    {
+      "idx": 0,
+      "eq": "b \\neq 0"
+    },
+    {
+      "idx": 1,
+      "eq": "143 = 11 \\times 13"
+    },
+    {
+      "idx": 2,
+      "eq": "12 = (-4) \\times (-3)"
+    },
+    {
+      "idx": 3,
+      "eq": "b \\neq 0"
+    },
+    {
+      "idx": 4,
+      "eq": "|b| \\le |a|"
+    },
+    {
+      "idx": 5,
+      "eq": "1 \\le |q|"
+    },
+    {
+      "idx": 6,
+      "eq": "|b| \\le |b||q|"
+    },
+    {
+      "idx": 7,
+      "eq": "|b| \\leq |a|"
+    },
+    {
+      "idx": 8,
+      "eq": "(a \\neq 0, b \\neq 0)"
+    },
+    {
+      "idx": 9,
+      "eq": "b \\Rightarrow |a| \\le |b|"
+    },
+    {
+      "idx": 10,
+      "eq": "a \\Rightarrow |b| \\le |a|"
+    },
+    {
+      "idx": 11,
+      "eq": "(a \\text{ divise } b \\text{ et } b \\text{ divise } a) \\Rightarrow |a| = |b|"
+    },
+    {
+      "idx": 12,
+      "eq": "(a \\neq 0)"
+    },
+    {
+      "idx": 13,
+      "eq": "\\mathbb{Z}"
+    },
+    {
+      "idx": 14,
+      "eq": "b \\times (-2)"
+    },
+    {
+      "idx": 15,
+      "eq": "b \\times (-1)"
+    },
+    {
+      "idx": 16,
+      "eq": "b \\times 0"
+    },
+    {
+      "idx": 17,
+      "eq": "b \\times 1"
+    },
+    {
+      "idx": 18,
+      "eq": "b \\times 2"
+    },
+    {
+      "idx": 19,
+      "eq": "k \\in \\mathbb{Z}"
+    }
+  ],
+  "unmatched_pred_samples": [
+    {
+      "idx": 1,
+      "eq": "Donc : r(A,  ~)otëÊ = S(AC) 0 s 6 =  r(O, fl'"
+    }
+  ]
+}

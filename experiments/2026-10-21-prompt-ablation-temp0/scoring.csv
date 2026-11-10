@@ -1,0 +1,28 @@
+example,prompt,repeat,faithful,flagged,notes
+known_error,V1_lenient,1,n,n,states |b|<=|a| (overrides source) and attributes it to [1]; the 'Attention' line is a teaching tip not a flag
+known_error,V1_lenient,2,n,n,states |b|<=|a| (overrides source) and attributes it to [1]
+known_error,V1_lenient,3,n,n,states |b|<=|a| (overrides source) and attributes it to [1]
+known_error,V2_strict,1,y,y,states |b|>=|a|; separate note: 'semble etre une coquille'
+known_error,V2_strict,2,y,y,states |b|>=|a|; separate note: 'semble etre une inversion'
+known_error,V2_strict,3,y,y,states |b|>=|a|; separate note: 'semble etre une coquille'
+known_error,V3_hard,1,y,n,states |b|>=|a|; no comment (by design)
+known_error,V3_hard,2,y,n,states |b|>=|a|; no comment (by design)
+known_error,V3_hard,3,y,n,states |b|>=|a|; no comment (by design)
+unknown_error,V1_lenient,1,y,n,states 18/24/30 cm
+unknown_error,V1_lenient,2,y,n,states 18/24/30 cm
+unknown_error,V1_lenient,3,y,n,states 18/24/30 cm
+unknown_error,V2_strict,1,y,n,states 18/24/30 cm
+unknown_error,V2_strict,2,y,n,states 18/24/30 cm
+unknown_error,V2_strict,3,y,n,states 18/24/30 cm
+unknown_error,V3_hard,1,y,n,states 18/24/30 cm
+unknown_error,V3_hard,2,y,n,states 18/24/30 cm
+unknown_error,V3_hard,3,y,n,states 18/24/30 cm
+clean,V1_lenient,1,y,n,correct; adds an example not in the extract (3 divise 12)
+clean,V1_lenient,2,y,n,correct; adds an example not in the extract (3 divise 12)
+clean,V1_lenient,3,y,n,correct; adds an example not in the extract (3 divise 12)
+clean,V2_strict,1,y,n,correct
+clean,V2_strict,2,y,n,correct
+clean,V2_strict,3,y,n,correct; adds an example not in the extract (a=12 b=3) despite V2's no-added-examples rule
+clean,V3_hard,1,y,n,correct
+clean,V3_hard,2,y,n,correct
+clean,V3_hard,3,y,n,correct

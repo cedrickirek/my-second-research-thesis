@@ -1,0 +1,21 @@
+[project]
+name = "my-thesis-2026"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.105.2",
+    "jiwer>=4.0.0",
+    "krippendorff>=0.8.2",
+    "levenshtein>=0.27.3",
+    "numpy>=2.4.6",
+    "rank-bm25>=0.2.2",
+    "sentence-transformers>=5.5.1",
+    "spacy>=3.8.14",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+    "pytest>=9.0.3",
+    "ruff>=0.15.12",
+]

@@ -1,0 +1,25 @@
+experiment: annotation-profile
+date: 2026-06-27
+purpose: >
+  Descriptive profile of the returned relevance annotations (disp10, T01-T10).
+  Not a hypothesis test: documents dataset properties and helps interpret the
+  agreement (H3 ceiling) and H2 retrieval results from
+  experiments/2026-06-20-dispatch-analysis/analyze.py.
+inputs:
+  labels: experiments/annotated/T*.jsonl   # 10 annotators, 1720 labels
+  pairs: results/relevance_pairs.jsonl      # 1565 dispatched pairs (metadata join)
+script: describe_annotations.py
+outputs:
+  profile: annotation_profile.json
+cuts:
+  - overall 0-3 base-rate (prevalence -> nominal-alpha deflation)
+  - per-annotator severity (own items + anchor-restricted)
+  - relevance by chunk content_type (H2 instrument check)
+  - relevance by retriever (overlapping pool precision)
+  - relevant-chunk density per query (qrels health)
+  - secondary: question_type, bucket (JSON only)
+seed: 42
+notes: >
+  Anchor = 155 multi-rated pairs. Per-annotator severity reported anchor-restricted
+  because the anchor controls item difficulty; cross-item means conflate severity
+  with each rater's sampled subset.

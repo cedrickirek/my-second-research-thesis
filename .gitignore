@@ -1,0 +1,48 @@
+# Data — never commit raw scans or large processed files
+data/raw/
+data/ocr/*.json
+data/ocr/**/*.json
+data/corpus/*.parquet
+*.pdf
+*.docx
+!proposal/*.docx
+
+# Secrets
+.env
+.env.*
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Experiment outputs
+experiments/*/*.log
+experiments/*/checkpoints/
+
+# Generated report build (regenerate with thesis/build_report.sh)
+thesis/build/
+results/*.parquet
+results/*.pkl
+results/dense_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude Code session memory (auto-generated, machine-specific)
+.claude/
+
+# Public snapshot: ship the compiled thesis
+!thesis/*.pdf

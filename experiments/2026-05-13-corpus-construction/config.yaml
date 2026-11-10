@@ -1,0 +1,52 @@
+date: 2026-05-13
+slug: corpus-construction
+description: >
+  v1 retrieval corpus construction for the Tutorly thesis. Takes the
+  marker-OCR'd CIAM Terminale C Chapter 2 markdown, applies section-aware
+  chunking with 8-value content_type tagging, flags structurally suspect
+  equations, and tags chunks whose source span contained a marker-dropped
+  figure reference. Produces data/corpus/chunks.jsonl and the data card.
+
+inputs:
+  ocr_md: draft_codes/ocr_validation_results/content/output_md/extract_ciam_tc/extract_ciam_tc.md
+
+params:
+  subject: mathematics
+  level: Terminale C
+  source: "CIAM Terminale C, Chapitre 2 — Divisibilité dans Z"
+
+outputs:
+  chunks: data/corpus/chunks.jsonl
+  data_card: data/corpus/DATA_CARD.md
+  methodology: experiments/2026-05-13-corpus-construction/writeup/methodology.md
+
+results:
+  chunks: 84
+  prose_chars: 30785
+  prose_words: 5412
+  equations: 334
+  chunks_with_dropped_figure: 15
+  chunks_with_hallucination_flag: 6
+  content_type_breakdown:
+    theory: 30
+    theorem: 18
+    example: 10
+    remark: 10
+    proof: 8
+    definition: 5
+    solution: 3
+    exercise: 0
+  hallucination_flag_breakdown:
+    mismatched_delimiters: 0
+    unbalanced_braces: 1
+    equations_without_prose: 3
+    suspicious_short_equation: 0
+    layout_artefact_in_equation: 3
+
+reproduce: |
+  python -m src.corpus.build \
+    --input draft_codes/ocr_validation_results/content/output_md/extract_ciam_tc/extract_ciam_tc.md \
+    --source "CIAM Terminale C, Chapitre 2 — Divisibilité dans Z" \
+    --level "Terminale C" \
+    --subject "mathematics" \
+    --out data/corpus/chunks.jsonl

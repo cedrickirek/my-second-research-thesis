@@ -1,0 +1,423 @@
+% references.bib — Tutorly thesis (HEC Paris × X), Cedric KIRE.
+% Cited with pandoc citation keys; render via:
+%   pandoc thesis.md --citeproc --bibliography=references.bib --csl=hec.csl -o thesis.docx
+%
+% Provenance: entries drafted in Claude Chat (2026-06-27) from the repo citation
+% inventory (thesis/references_inventory.md), then contrast-checked against the
+% inventory by Claude Code. Tier-A (H3 lineage) DOIs/arXiv IDs match the verified
+% list in decisions/2026-06-26-h3-reframe-relevance-assessor.md §5. The RRF entry
+% (cormack2009rrf) is the canonical SIGIR'09 paper, not a miscite.
+%
+% Verification status (2026-06-28): all academic entries verified against primary
+% records (ACM DL / DBLP / arXiv / publisher). Tier-A H3 lineage verified 2026-06-26;
+% voorhees2000/bailey2008/landis1977/zheng2023/huang2025/cormack2009rrf/
+% upadhyay2024largescale verified 2026-06-28 (the last confirmed as the published
+% ICTIR'25 form of arXiv:2411.08275). UMBRELA remains a preprint (no peer-reviewed
+% version as of June 2026 — confirmed, not an omission).
+%
+% OPEN ITEMS:
+%   1. CIAM textbook — now added as ciam1999 (Touré ed., EDICEF/Vanves, 1999), per author.
+%   2. nguyen2026pragedu — lead author P. V. Nguyen confirmed; full co-author list still
+%      to verify (publisher page 403). See author-verify note on the entry.
+
+% ── Already-verified: H3 / LLM-relevance-assessor lineage ────────────────
+
+@article{voorhees2000,
+  author    = {Voorhees, Ellen M.},
+  title     = {Variations in Relevance Judgments and the Measurement of
+               Retrieval Effectiveness},
+  journal   = {Information Processing \& Management},
+  volume    = {36},
+  number    = {5},
+  pages     = {697--716},
+  year      = {2000},
+  publisher = {Elsevier},
+  doi       = {10.1016/S0306-4573(00)00010-8}
+}
+
+@inproceedings{bailey2008,
+  author    = {Bailey, Peter and Craswell, Nick and Soboroff, Ian and
+               Thomas, Paul and de Vries, Arjen P. and Yilmaz, Emine},
+  title     = {Relevance Assessment: Are Judges Exchangeable and Does It Matter?},
+  booktitle = {Proceedings of the 31st Annual International ACM SIGIR Conference
+               on Research and Development in Information Retrieval (SIGIR '08)},
+  pages     = {667--674},
+  year      = {2008},
+  publisher = {Association for Computing Machinery},
+  address   = {Singapore},
+  doi       = {10.1145/1390334.1390447}
+}
+
+@article{landis1977,
+  author    = {Landis, J. Richard and Koch, Gary G.},
+  title     = {The Measurement of Observer Agreement for Categorical Data},
+  journal   = {Biometrics},
+  volume    = {33},
+  number    = {1},
+  pages     = {159--174},
+  year      = {1977},
+  publisher = {JSTOR},
+  doi       = {10.2307/2529310}
+}
+
+@article{artstein2008,
+  author    = {Artstein, Ron and Poesio, Massimo},
+  title     = {Inter-Coder Agreement for Computational Linguistics},
+  journal   = {Computational Linguistics},
+  volume    = {34},
+  number    = {4},
+  pages     = {555--596},
+  year      = {2008},
+  publisher = {MIT Press},
+  doi       = {10.1162/coli.07-034-R2}
+}
+
+@inproceedings{faggioli2023,
+  author    = {Faggioli, Guglielmo and Dietz, Laura and Clarke, Charles L. A. and
+               Demartini, Gianluca and Hagen, Matthias and Hauff, Claudia and
+               Kando, Noriko and Kanoulas, Evangelos and Potthast, Martin and
+               Stein, Benno and Wachsmuth, Henning},
+  title     = {Perspectives on Large Language Models for Relevance Judgment},
+  booktitle = {Proceedings of the 2023 ACM SIGIR International Conference on
+               Theory of Information Retrieval (ICTIR '23)},
+  pages     = {39--50},
+  year      = {2023},
+  publisher = {Association for Computing Machinery},
+  address   = {Taipei, Taiwan},
+  doi       = {10.1145/3578337.3605136},
+  eprint    = {2304.09161},
+  archivePrefix = {arXiv},
+  url       = {https://doi.org/10.1145/3578337.3605136}
+}
+
+@inproceedings{thomas2024,
+  author    = {Thomas, Paul and Spielman, Seth and Craswell, Nick and Mitra, Bhaskar},
+  title     = {Large Language Models can Accurately Predict Searcher Preferences},
+  booktitle = {Proceedings of the 47th International ACM SIGIR Conference on
+               Research and Development in Information Retrieval (SIGIR '24)},
+  pages     = {1930--1940},
+  year      = {2024},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3626772.3657707},
+  eprint    = {2309.10621},
+  archivePrefix = {arXiv},
+  url       = {https://doi.org/10.1145/3626772.3657707}
+}
+
+@misc{upadhyay2024umbrela,
+  author        = {Upadhyay, Shivani and Pradeep, Ronak and Thakur, Nandan and
+                   Craswell, Nick and Lin, Jimmy},
+  title         = {{UMBRELA}: {UM}brela is the (Open-Source Reproduction of the)
+                   {B}ing {REL}evance {A}ssessor},
+  year          = {2024},
+  eprint        = {2406.06519},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.IR},
+  url           = {https://arxiv.org/abs/2406.06519},
+  note          = {arXiv preprint; no peer-reviewed version as of June 2026}
+}
+
+% VERIFIED 2026-06-28 (ACM DL + DBLP ICTIR'25): this is the published form of the
+% arXiv:2411.08275 preprint ("... An Initial Look"). Venue/pages/DOI/author-list confirmed.
+@inproceedings{upadhyay2024largescale,
+  author    = {Upadhyay, Shivani and Pradeep, Ronak and Thakur, Nandan and
+               Campos, Daniel and Craswell, Nick and Soboroff, Ian and Lin, Jimmy},
+  title     = {A Large-Scale Study of Relevance Assessments with Large Language
+               Models Using {UMBRELA}},
+  booktitle = {Proceedings of the 2025 International ACM SIGIR Conference on
+               Innovative Concepts and Theories in Information Retrieval (ICTIR '25)},
+  pages     = {358--368},
+  year      = {2025},
+  publisher = {Association for Computing Machinery},
+  address   = {Padua, Italy},
+  doi       = {10.1145/3731120.3744605},
+  url       = {https://doi.org/10.1145/3731120.3744605},
+  note      = {Published version of arXiv:2411.08275 ("An Initial Look").
+               Verified against ACM DL and DBLP ICTIR'25, 2026-06-28.}
+}
+
+% ── Established works ────────────────────────────────────────────────────
+
+@inproceedings{lewis2020rag,
+  author    = {Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and
+               Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and
+               Küttler, Heinrich and Lewis, Mike and Yih, Wen-tau and
+               Rocktäschel, Tim and Riedel, Sebastian and Kiela, Douwe},
+  title     = {Retrieval-Augmented Generation for Knowledge-Intensive {NLP} Tasks},
+  booktitle = {Advances in Neural Information Processing Systems 33 (NeurIPS 2020)},
+  pages     = {9459--9474},
+  year      = {2020},
+  publisher = {Curran Associates, Inc.},
+  eprint    = {2005.11401},
+  archivePrefix = {arXiv},
+  url       = {https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html}
+}
+
+@article{sweller1988,
+  author  = {Sweller, John},
+  title   = {Cognitive Load During Problem Solving: Effects on Learning},
+  journal = {Cognitive Science},
+  volume  = {12},
+  number  = {2},
+  pages   = {257--285},
+  year    = {1988},
+  doi     = {10.1207/s15516709cog1202_4}
+}
+
+@article{atkinson2000,
+  author  = {Atkinson, Robert K. and Derry, Sharon J. and Renkl, Alexander and
+             Wortham, Donald},
+  title   = {Learning from Examples: Instructional Principles from the Worked
+             Examples Research},
+  journal = {Review of Educational Research},
+  volume  = {70},
+  number  = {2},
+  pages   = {181--214},
+  year    = {2000},
+  doi     = {10.3102/00346543070002181}
+}
+
+@article{li2025edragsurvey,
+  author  = {Li, Zongxi and Wang, Zijian and Wang, Weiming and Hung, Kevin and
+             Xie, Haoran and Wang, Fu Lee},
+  title   = {Retrieval-Augmented Generation for Educational Application:
+             A Systematic Survey},
+  journal = {Computers and Education: Artificial Intelligence},
+  volume  = {8},
+  articleno = {100417},
+  year    = {2025},
+  doi     = {10.1016/j.caeai.2025.100417}
+}
+
+% [author-verify] Lead author P. V. Nguyen confirmed via Wiley/search; full co-author
+% list could not be retrieved (publisher page returned HTTP 403). Confirm before final submission.
+@article{nguyen2026pragedu,
+  author  = {Nguyen, P. V. and others},
+  title   = {Towards Personalized {AI} Education: Context-Aware
+             Retrieval-Augmented Generation with Grade-Level {LLM} Adaptation},
+  journal = {Computer Applications in Engineering Education},
+  volume  = {34},
+  number  = {1},
+  articleno = {e70153},
+  year    = {2026},
+  doi     = {10.1002/cae.70153}
+}
+
+@inproceedings{zheng2023,
+  author    = {Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and
+               Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and Lin, Zi and
+               Li, Zhuohan and Li, Dacheng and Xing, Eric P. and Zhang, Hao and
+               Gonzalez, Joseph E. and Stoica, Ion},
+  title     = {Judging {LLM}-as-a-Judge with {MT}-Bench and Chatbot Arena},
+  booktitle = {Advances in Neural Information Processing Systems 36 (NeurIPS 2023),
+               Datasets and Benchmarks Track},
+  year      = {2023},
+  eprint    = {2306.05685},
+  archivePrefix = {arXiv},
+  url       = {https://papers.nips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html}
+}
+
+@inproceedings{wang2023selfconsistency,
+  author    = {Wang, Xuezhi and Wei, Jason and Schuurmans, Dale and Le, Quoc V. and
+               Chi, Ed H. and Narang, Sharan and Chowdhery, Aakanksha and Zhou, Denny},
+  title     = {Self-Consistency Improves Chain-of-Thought Reasoning in Language Models},
+  booktitle = {The Eleventh International Conference on Learning Representations (ICLR 2023)},
+  year      = {2023},
+  eprint    = {2203.11171},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url       = {https://arxiv.org/abs/2203.11171}
+}
+
+@article{robertson2009bm25,
+  author  = {Robertson, Stephen and Zaragoza, Hugo},
+  title   = {The Probabilistic Relevance Framework: {BM25} and Beyond},
+  journal = {Foundations and Trends in Information Retrieval},
+  volume  = {3},
+  number  = {4},
+  pages   = {333--389},
+  year    = {2009},
+  doi     = {10.1561/1500000019}
+}
+
+@inproceedings{cormack2009rrf,
+  author    = {Cormack, Gordon V. and Clarke, Charles L. A. and Buettcher, Stefan},
+  title     = {Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank
+               Learning Methods},
+  booktitle = {Proceedings of the 32nd International ACM SIGIR Conference on
+               Research and Development in Information Retrieval (SIGIR '09)},
+  pages     = {758--759},
+  year      = {2009},
+  publisher = {Association for Computing Machinery},
+  address   = {Boston, MA, USA},
+  doi       = {10.1145/1571941.1572114}
+}
+
+@misc{wang2024e5,
+  author        = {Wang, Liang and Yang, Nan and Huang, Xiaolong and Yang, Linjun and
+                   Majumder, Rangan and Wei, Furu},
+  title         = {Multilingual {E5} Text Embeddings: A Technical Report},
+  year          = {2024},
+  eprint        = {2402.05672},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2402.05672}
+}
+
+@unpublished{honnibal2017spacy,
+  author = {Honnibal, Matthew and Montani, Ines},
+  title  = {{spaCy 2}: Natural Language Understanding with {B}loom Embeddings,
+            Convolutional Neural Networks and Incremental Parsing},
+  year   = {2017},
+  note   = {Software}
+}
+
+@inproceedings{karpukhin2020dpr,
+  author    = {Karpukhin, Vladimir and Oguz, Barlas and Min, Sewon and
+               Lewis, Patrick and Wu, Ledell and Edunov, Sergey and Chen, Danqi and
+               Yih, Wen-tau},
+  title     = {Dense Passage Retrieval for Open-Domain Question Answering},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural
+               Language Processing (EMNLP)},
+  pages     = {6769--6781},
+  year      = {2020},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2020.emnlp-main.550},
+  eprint    = {2004.04906},
+  archivePrefix = {arXiv},
+  url       = {https://aclanthology.org/2020.emnlp-main.550/}
+}
+
+@article{huang2025hallucination,
+  author  = {Huang, Lei and Yu, Weijiang and Ma, Weitao and Zhong, Weihong and
+             Feng, Zhangyin and Wang, Haotian and Chen, Qianglong and Peng, Weihua and
+             Feng, Xiaocheng and Qin, Bing and Liu, Ting},
+  title   = {A Survey on Hallucination in Large Language Models: Principles,
+             Taxonomy, Challenges, and Open Questions},
+  journal = {ACM Transactions on Information Systems},
+  volume  = {43},
+  number  = {2},
+  articleno = {42},
+  pages   = {1--55},
+  year    = {2025},
+  doi     = {10.1145/3703155}
+}
+
+% ── Statistical methods (§M9.1) ──────────────────────────────────────────
+% Added 2026-11-08 (review session 5). sakai2006: pages and DOI checked against the
+% SIGIR'06 record. efron1993: authors, title, publisher checked; the publisher lists the
+% hardback release as 1994 (copyright 1993, the date usually cited). The DOI
+% 10.1201/9780429246593 belongs to a later digital edition, so it is not used here.
+
+@book{efron1993,
+  author    = {Efron, Bradley and Tibshirani, Robert J.},
+  title     = {An Introduction to the Bootstrap},
+  series    = {Monographs on Statistics and Applied Probability},
+  publisher = {Chapman \& Hall},
+  address   = {New York},
+  year      = {1993},
+  isbn      = {0-412-04231-2}
+}
+
+@inproceedings{sakai2006,
+  author    = {Sakai, Tetsuya},
+  title     = {Evaluating Evaluation Metrics Based on the Bootstrap},
+  booktitle = {Proceedings of the 29th Annual International ACM SIGIR Conference
+               on Research and Development in Information Retrieval (SIGIR '06)},
+  pages     = {525--532},
+  year      = {2006},
+  publisher = {Association for Computing Machinery},
+  address   = {Seattle, Washington, USA},
+  doi       = {10.1145/1148170.1148261}
+}
+
+% ── External empirical claims (inline-cited; web sources) ────────────────
+% SMIG cited from the official government portal. The 75 000 FCFA figure and the
+% 21 Dec 2022 decree (effective 1 Jan 2023) are independently corroborated by news
+% coverage (Abidjan.net, APAnews, Yeclo). [author note: the specific gouv.ci/6822
+% page could not be auto-fetched (TLS cert error) — confirm the link resolves.]
+@misc{gouvci2023smig,
+  author       = {{Côte d'Ivoire, Portail officiel du Gouvernement}},
+  title        = {Salaire minimum interprofessionnel garanti (SMIG)},
+  year         = {2023},
+  howpublished = {\url{https://gouv.ci/actualite/6822}},
+  note         = {SMIG porté de 60\,000 à 75\,000 FCFA — décret du 21 décembre 2022, en vigueur au 1er janvier 2023; consulté le 2026-06-27}
+}
+
+@misc{apanews2025bac,
+  author       = {{APAnews}},
+  title        = {RCI : un taux de réussite de 40,15\% au BAC 2025},
+  year         = {2025},
+  howpublished = {\url{https://fr.apanews.net/education/rci-4015-de-taux-de-reussite-au-bac-2025/}},
+  note         = {Taux national 40,15\% ; 133\,518 admis / 332\,515 candidats (DECO, 7 juillet 2025); consulté le 2026-06-27}
+}
+
+@misc{yeclo2023bac,
+  author       = {{Yeclo}},
+  title        = {BAC en Côte d'Ivoire : taux de réussite de 1965 à 2023},
+  year         = {2023},
+  howpublished = {\url{https://www.yeclo.com/bac-en-cote-divoire-taux-de-reussite-de-1965-a-2023}},
+  note         = {Série historique des taux de réussite au BAC (p. ex. 46,09\% en 2018, 32,09\% en 2023); consulté le 2026-06-27}
+}
+
+@misc{achi2026interview,
+  author       = {{Le savant ACHI}},
+  title        = {Personal interview on the cost of private mathematics tutoring in Abidjan},
+  year         = {2026},
+  note         = {Private mathematics tutor, Abidjan; interview conducted 2 February 2026. Tutoring channel: \url{https://www.youtube.com/channel/UCmyITeoxTduLOD2Kur9pCUg}}
+}
+
+@misc{travailemploi2026smic,
+  author       = {{France, Ministère du Travail, de la Santé, des Solidarités et des Familles}},
+  title        = {Revalorisation du {SMIC} au 1er juin 2026},
+  year         = {2026},
+  howpublished = {\url{https://travail-emploi.gouv.fr/revalorisation-du-smic-au-1er-juin-2026}},
+  note         = {SMIC mensuel brut ≈ 1\,800 € (35 h/semaine); consulté le 2026-06-29}
+}
+
+@misc{teamfrance2025edtech,
+  author       = {{Team France Export (Business France)}},
+  title        = {Fiche marché — Éducation et {EdTech} : Côte d'Ivoire},
+  year         = {2025},
+  howpublished = {\url{https://www.teamfrance-export.fr/fiche-marche/tech-et-services/education-et-edtech/CI}},
+  note         = {Budgets éducation pluriannuels en milliards d'euros; écosystème EdTech naissant (≈ 18 startups); consulté le 2026-06-29}
+}
+
+@misc{gpekix2025ai,
+  author       = {{GPE-KIX Africa 21 Hub (IFEF-OIF, AUF, CONFEMEN) and UNESCO}},
+  title        = {Côte d'Ivoire introduces artificial intelligence ({AI}) in its education system},
+  year         = {2025},
+  howpublished = {\url{https://www.gpekix.org/news/cote-divoire-introduces-artificial-intelligence-ai-education-system}},
+  note         = {Atelier régional, Yamoussoukro, 15--17 septembre 2025; cadre de compétences IA pour l'éducation; consulté le 2026-06-29}
+}
+
+@misc{connectionivoirienne2026teachers,
+  author       = {{Connectionivoirienne}},
+  title        = {Système éducatif : les efforts de la Côte d'Ivoire pour réduire le déficit d'enseignants},
+  year         = {2026},
+  howpublished = {\url{https://connectionivoirienne.net/2026/03/30/systeme-educatif-les-efforts-de-la-cote-divoire-pour-reduire-le-deficit-denseignants/}},
+  note         = {Concours exceptionnel mars 2026 : 7\,668 candidats pour 2\,000 postes de professeurs de mathématiques et sciences physiques; consulté le 2026-06-29}
+}
+
+% ── Curriculum source ────────────────────────────────────────────────────
+
+@book{ciam1999,
+  editor    = {Touré, Saliou},
+  title     = {Mathématiques, Terminale Sciences math\'ematiques},
+  series    = {Collection Inter-Africaine de Math\'ematiques (CIAM)},
+  publisher = {EDICEF},
+  address   = {Vanves},
+  year      = {1999}
+}
+
+% ── Software / artifacts ─────────────────────────────────────────────────
+
+@misc{marker,
+  author = {Paruchuri, Vik},
+  title  = {marker: Convert PDF to Markdown + {JSON} Quickly with High Accuracy},
+  year   = {2024},
+  howpublished = {\url{https://github.com/datalab-to/marker}},
+  note   = {Software; originally hosted at github.com/VikParuchuri/marker}
+}
+
+% Mathpix was abandoned and unused in any reported experiment (M1) — not a bibliography entry.

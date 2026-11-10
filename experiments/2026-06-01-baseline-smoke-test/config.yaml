@@ -1,0 +1,58 @@
+date: 2026-06-01
+slug: baseline-smoke-test
+description: >
+  End-to-end plumbing test of the baseline hybrid retrieval + generation
+  pipeline (BM25 + French dense -> RRF -> Claude) on a frozen 10-chunk
+  subset of the v1 corpus (CIAM Terminale C, Chapter 2). NOT a result: the
+  goal is only to confirm the wiring works before scaling. No quality
+  conclusions are drawn at n=10 on a single chapter.
+
+inputs:
+  corpus: data/corpus/chunks.jsonl
+
+params:
+  subset_size: 10
+  subset_recipe: {definition: 2, theorem: 2, theory: 1, example: 2, solution: 1, proof: 1, hard_dropped_figure: 1}
+  selection: deterministic (sorted by chunk_id), not random
+  tokenizer: "spaCy fr_core_news_sm (tokenize + stopword removal, no lemmatization)"
+  bm25: "rank-bm25 (Okapi BM25, default k1=1.5 b=0.75, untuned)"
+  dense_model: "intfloat/multilingual-e5-small (smoke placeholder; production French model deferred, to be benchmarked)"
+  fusion: "reciprocal rank fusion (RRF), k=60"
+  top_k_per_method: 20
+  final_k: 5
+  generator: "claude-sonnet-4-6"
+  system_prompt: "V2 strict-faithfulness (adopted after the prompt ablation; see writeup methodology.md section 5)"
+  seed: 42
+
+outputs:
+  subset: experiments/2026-06-01-baseline-smoke-test/smoke_chunks.jsonl
+  selection_manifest: experiments/2026-06-01-baseline-smoke-test/selection.json
+  rag_results: experiments/2026-06-01-baseline-smoke-test/results.json
+  prompt_ablation: experiments/2026-06-01-baseline-smoke-test/prompt_ablation.json
+  methodology: experiments/2026-06-01-baseline-smoke-test/writeup/methodology.md
+
+results:
+  pipeline_runs_end_to_end: true
+  retrieved_chunks_relevant: true       # definition chunk ranked #1; top-5 all on-topic (qualitative, n=10)
+  response_uses_context: true           # answer cites [1] and states the retrieved definition
+  grounding_injection_check: flagged-not-silent
+  findings: >
+    Part A added worked examples absent from the extracts (mild over-generation
+    vs. the 'extracts only' instruction). Part B (grounding injection: |b|<=|a|
+    flipped to the false |b|>=|a|): under the original lenient prompt the model
+    overrode the poisoned extract with the correct fact from memory and
+    mis-attributed it to the source, and was inconsistent across runs. A prompt
+    ablation (3 system prompts x 1 item) showed faithfulness scales
+    monotonically with instruction strictness; the strict 'V2' prompt reported
+    the source faithfully and flagged the suspected error in a separate note,
+    and was adopted as the canonical system prompt. Single-item probe, not a
+    quantitative result -- needs multiple injected errors x repeated runs x
+    model sizes (links to H3/H4).
+
+reproduce: |
+  uv run pytest src/retrieval/ src/generation/ -q
+  uv run python experiments/2026-06-01-baseline-smoke-test/select_chunks.py
+  uv run python experiments/2026-06-01-baseline-smoke-test/run_retrieval.py
+  # generation steps need ANTHROPIC_API_KEY in the environment:
+  uv run python experiments/2026-06-01-baseline-smoke-test/run_pipeline.py
+  uv run python experiments/2026-06-01-baseline-smoke-test/prompt_ablation.py

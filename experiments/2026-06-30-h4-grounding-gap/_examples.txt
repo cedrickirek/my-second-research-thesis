@@ -1,0 +1,72 @@
+######################################################################
+QUERY bac2025-e1-3: Détermine une primitive sur R de la fonction x ↦ sin(-2x + π/3).
+
+--- FRONTIER UNGROUNDED (mean 2.0) scores={'factual_accuracy': 1, 'curriculum_alignment': 1, 'pedagogical_quality': 1, 'language_register': 5}
+RESPONSE: ## Réponse
+
+Les extraits de cours fournis sont **vides** — aucun contenu n'a été transmis dans les extraits de cours.
+
+---
+
+Je ne dispose donc d'**aucun extrait de cours** sur lequel m'appuyer pour répondre à cette question, conformément aux règles qui m'imposent de m'appuyer **exclusivement** sur les extraits fournis.
+
+**Je ne peux pas répondre à cette question** en l'état, car cela m'obligerait à utiliser mes propres connaissances mathématiques, ce qui n'est pas autorisé ici.
+
+---
+
+> 💡 **Conse
+JUDGE factual: La réponse est factuellement fausse car elle prétend que les extraits de cours sont vides, ce qui est incorrect.
+
+--- FRONTIER GROUNDED (mean 5.0) scores={'factual_accuracy': 5, 'curriculum_alignment': 5, 'pedagogical_quality': 5, 'language_register': 5}
+RESPONSE: ## Résolution
+
+Je vais déterminer une primitive de la fonction $x \mapsto \sin\left(-2x + \frac{\pi}{3}\right)$.
+
+---
+
+### Méthode : Reconnaître une dérivée de fonction composée
+
+Je cherche une fonction $F$ telle que $F'(x) = \sin\left(-2x + \frac{\pi}{3}\right)$.
+
+Je sais que la dérivée de $\cos(u)$ est $-\sin(u) \cdot u'$.
+
+Posons $u(x) = -2x + \frac{\pi}{3}$, donc $u'(x) = -2$.
+
+Ainsi :
+$$\frac{d}{dx}\left[\cos\left(-2x + \frac{\pi}{3}\right)\right] = -\sin\left(-2x + \frac{\pi}{3}\right) \ti
+JUDGE factual: Toutes les affirmations mathématiques, du raisonnement au calcul final, sont exactes.
+
+######################################################################
+QUERY bac2025-e2-2: Détermine un argument du nombre complexe (1 - √2)·e^(iπ/3).
+
+--- FRONTIER UNGROUNDED (mean 2.0) scores={'factual_accuracy': 1, 'curriculum_alignment': 1, 'pedagogical_quality': 1, 'language_register': 5}
+RESPONSE: ## Réponse
+
+Les extraits de cours fournis sont **vides** : aucun contenu n'a été transmis dans les extraits de cours.
+
+Je ne suis donc **pas en mesure de répondre** à cette question en m'appuyant exclusivement sur les extraits du programme officiel, comme les règles me l'imposent.
+
+---
+
+**Que faire ?**
+
+Merci de **fournir les extraits de cours** pertinents (par exemple : définition d'un argument, forme trigonométrique/exponentielle d'un nombre complexe, propriétés des arguments) afin que je puis
+JUDGE factual: La réponse est factuellement fausse car elle prétend que les extraits de cours sont vides, alors qu'ils contiennent toutes les informations nécessaires pour résoudre l'exercice.
+
+--- FRONTIER GROUNDED (mean 5.0) scores={'factual_accuracy': 5, 'curriculum_alignment': 5, 'pedagogical_quality': 5, 'language_register': 5}
+RESPONSE: ## Détermination d'un argument de $(1 - \sqrt{2}) \cdot e^{i\pi/3}$
+
+### Analyse du nombre complexe
+
+Le nombre complexe s'écrit comme un produit de deux facteurs :
+- $z_1 = (1 - \sqrt{2})$, qui est un **réel négatif** (car $\sqrt{2} \approx 1{,}414 > 1$, donc $1 - \sqrt{2} < 0$)
+- $z_2 = e^{i\pi/3}$, qui est de module $1$ et d'argument $\dfrac{\pi}{3}$
+
+---
+
+### Étape 1 : Argument de $z_1 = (1 - \sqrt{2})$
+
+$1 - \sqrt{2}$ est un réel **strictement négatif**, donc d'après [1] :
+
+$$z \text{ est ré
+JUDGE factual: La réponse est mathématiquement parfaite, toutes les affirmations, propriétés et calculs sont corrects.

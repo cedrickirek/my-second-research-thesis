@@ -1,0 +1,21 @@
+date: 2026-05-12
+slug: marker-validation-ciam-tc
+description: >
+  Validate marker OCR output against a manually corrected ground truth for
+  the CIAM Terminale C chapter on Divisibility in Z. The ground-truth file
+  has its exercise section removed so the comparison stays scope-matched
+  with what marker actually produced.
+
+inputs:
+  gt: draft_codes/ocr_validation_results/content/output_md/wo-exercises_ground_truth_extract_ciam_tc.md
+  pred: draft_codes/ocr_validation_results/content/output_md/extract_ciam_tc/extract_ciam_tc.md
+
+params:
+  min_match_similarity: 0.3
+  worst_n: 20
+
+reproduce: |
+  python -m src.ocr.validation.compare \
+    --gt   draft_codes/ocr_validation_results/content/output_md/wo-exercises_ground_truth_extract_ciam_tc.md \
+    --pred draft_codes/ocr_validation_results/content/output_md/extract_ciam_tc/extract_ciam_tc.md \
+    --out  experiments/2026-05-12-marker-validation-ciam-tc/results.json

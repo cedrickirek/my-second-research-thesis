@@ -1,0 +1,36 @@
+% HEC running header/footer (PDF build). Top: institution + the required
+% "Data Science for Business – Research Paper – Date" indication. Bottom: the
+% student's name and the page number. Applied to normal and chapter-opening pages.
+\usepackage{fancyhdr}
+\renewcommand{\maketitle}{}   % suppress pandoc's default title; we use a custom title page
+\setcounter{tocdepth}{0}   % table of contents lists chapters only (fits one page)
+
+% Render Greek letters and math symbols that appear in prose via the math font (the
+% default text font lacks these glyphs). Keeps the body font for everything else.
+\usepackage{newunicodechar}
+\newunicodechar{α}{\ensuremath{\alpha}}
+\newunicodechar{κ}{\ensuremath{\kappa}}
+\newunicodechar{τ}{\ensuremath{\tau}}
+\newunicodechar{≥}{\ensuremath{\geq}}
+\newunicodechar{≤}{\ensuremath{\leq}}
+\newunicodechar{≈}{\ensuremath{\approx}}
+\newunicodechar{↔}{\ensuremath{\leftrightarrow}}
+\newunicodechar{∈}{\ensuremath{\in}}
+\newunicodechar{ℝ}{\ensuremath{\mathbb{R}}}
+\newunicodechar{₂}{\textsubscript{2}}
+\setlength{\headheight}{14.5pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{HEC PARIS}
+\fancyhead[R]{Data Science for Business -- Research Paper -- June 2026}
+\fancyfoot[L]{Cedric Emmanuel KIRE}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyhead[L]{HEC PARIS}%
+  \fancyhead[R]{Data Science for Business -- Research Paper -- June 2026}%
+  \fancyfoot[L]{Cedric Emmanuel KIRE}%
+  \fancyfoot[R]{\thepage}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+}

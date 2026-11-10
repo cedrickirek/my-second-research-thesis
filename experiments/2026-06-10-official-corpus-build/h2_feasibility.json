@@ -1,0 +1,166 @@
+{
+  "totals": {
+    "chunks": 728,
+    "example": 141,
+    "solution": 33,
+    "theory": 190
+  },
+  "per_document": {
+    "172-ciam-tc": {
+      "theory": 12,
+      "theorem": 13,
+      "proof": 7,
+      "remark": 9,
+      "example": 15,
+      "exercise": 3,
+      "definition": 9,
+      "solution": 2
+    },
+    "194-ciam-tc": {
+      "theory": 15,
+      "remark": 10,
+      "theorem": 17,
+      "example": 14,
+      "solution": 1,
+      "exercise": 1,
+      "definition": 6,
+      "proof": 3
+    },
+    "214-ciam-tc": {
+      "theory": 30,
+      "definition": 2,
+      "example": 7,
+      "remark": 5,
+      "theorem": 6,
+      "proof": 1,
+      "exercise": 2
+    },
+    "234-ciam-tc": {
+      "theory": 12,
+      "definition": 3,
+      "example": 18,
+      "theorem": 15,
+      "remark": 6,
+      "proof": 6,
+      "solution": 5,
+      "exercise": 2
+    },
+    "256-ciam-tc": {
+      "definition": 3,
+      "remark": 7,
+      "theorem": 13,
+      "proof": 4,
+      "theory": 26,
+      "example": 11,
+      "solution": 5,
+      "exercise": 1
+    },
+    "276-ciam-tc": {
+      "theory": 9,
+      "definition": 4,
+      "example": 11,
+      "remark": 11,
+      "theorem": 10,
+      "proof": 2,
+      "exercise": 2,
+      "solution": 2
+    },
+    "296-ciam-tc": {
+      "theory": 24,
+      "definition": 3,
+      "example": 13,
+      "theorem": 15,
+      "remark": 6,
+      "proof": 6,
+      "exercise": 2,
+      "solution": 2
+    },
+    "322-ciam-tc": {
+      "theory": 8,
+      "exercise": 3,
+      "solution": 6,
+      "theorem": 5,
+      "example": 8,
+      "definition": 1,
+      "remark": 2
+    },
+    "56-ciam-tc": {
+      "definition": 10,
+      "remark": 10,
+      "theorem": 18,
+      "theory": 22,
+      "example": 14,
+      "proof": 7,
+      "solution": 3,
+      "exercise": 3
+    },
+    "6-ciam-tc": {
+      "theory": 23,
+      "remark": 16,
+      "theorem": 30,
+      "example": 30,
+      "proof": 21,
+      "solution": 7,
+      "exercise": 3,
+      "definition": 7
+    },
+    "bac-2022-maths-tc": {
+      "theory": 1,
+      "exercise": 6
+    },
+    "bac-2024-maths-serie-c": {
+      "theory": 3,
+      "exercise": 6
+    },
+    "bac-2025-maths-tc": {
+      "theory": 5,
+      "exercise": 1
+    }
+  },
+  "lecon_cooccurrence": {
+    "total_lecons": 107,
+    "theory_lecons": 89,
+    "theory_lecons_with_example": 66,
+    "theory_lecons_without_example": 23,
+    "examples_per_theory_lecon": {
+      "0": 23,
+      "1": 27,
+      "2": 21,
+      "3": 3,
+      "4": 11,
+      "5": 2,
+      "6": 2
+    },
+    "gap_lecons": [
+      "194-ciam-tc :: Notions de base > Fonction continue et monotone",
+      "194-ciam-tc :: Notions de base > Limite d'une fonction monotone sur un intervalle ouvert",
+      "214-ciam-tc :: Fonctions dérivées > Fonctions trigonométriques",
+      "214-ciam-tc :: Fonctions dérivées > Travaux dirigés",
+      "234-ciam-tc :: Logarithme décimal > Définition et propriétés",
+      "234-ciam-tc :: Primitives de polynômes trigonométriques > Définition et propriétés",
+      "234-ciam-tc :: Primitives de polynômes trigonométriques > Étude de la fonction In",
+      "256-ciam-tc :: Définition et propriétés",
+      "256-ciam-tc :: Définition et propriétés > Étude de la fonction exponentielle",
+      "256-ciam-tc :: Fonctions comportant exp > Exemples d'études de fonctions",
+      "256-ciam-tc :: Fonctions comportant exp > Fonctions exponentielles de base a (a > 0)",
+      "276-ciam-tc :: (no section)",
+      "296-ciam-tc :: Applications du calcul intégral > Fonctions définies par une intégrale",
+      "296-ciam-tc :: Techniques de calcul intégra > Intégration de fonctions particulières",
+      "322-ciam-tc :: Notion d'équation différentielle",
+      "322-ciam-tc :: Notion d'équation différentielle > Équations de types y' = f(x) et y'' = g(x)",
+      "56-ciam-tc :: Nombres complexes",
+      "56-ciam-tc :: Nombres complexes > Notation exponentielle d'un nombre complexe",
+      "56-ciam-tc :: Nombres complexes > Trigonométrie et nombres complexes",
+      "6-ciam-tc :: Arithmétique > Utilisations des congruences",
+      "bac-2022-maths-tc :: (no section)",
+      "bac-2024-maths-serie-c :: (no section)",
+      "bac-2025-maths-tc :: (no section)"
+    ]
+  },
+  "theory_audit": {
+    "theory_chunks": 190,
+    "example_like_candidates": 0,
+    "by_label": {},
+    "candidates": []
+  }
+}

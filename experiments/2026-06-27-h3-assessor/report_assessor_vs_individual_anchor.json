@@ -1,0 +1,46 @@
+{
+  "n_anchor_pairs": 155,
+  "n_anchor_with_llm": 155,
+  "human_vs_human_anchor": {
+    "n_units": 155,
+    "n_units_multi_rated": 155,
+    "n_raters": 10,
+    "krippendorff_alpha_ordinal": 0.463628729883643,
+    "krippendorff_alpha_nominal": 0.16128571428571425,
+    "two_rater": {
+      "n_pairs": 155,
+      "exact": 0.3870967741935484,
+      "adjacent": 0.8774193548387097,
+      "binary_relevant": 0.6258064516129033,
+      "cohen_kappa_binary": 0.25690196726731707,
+      "weighted_kappa": 0.47376142174532654,
+      "abs_diff_dist": {
+        "0": 60,
+        "1": 76,
+        "2": 17,
+        "3": 2
+      }
+    }
+  },
+  "llm_vs_individual_human_anchor": {
+    "n_units": 310,
+    "n_units_multi_rated": 310,
+    "n_raters": 2,
+    "krippendorff_alpha_ordinal": 0.5934763045792264,
+    "krippendorff_alpha_nominal": 0.37627946762548203,
+    "two_rater": {
+      "n_pairs": 310,
+      "exact": 0.5516129032258065,
+      "adjacent": 0.9193548387096774,
+      "binary_relevant": 0.7032258064516129,
+      "cohen_kappa_binary": 0.4005884825556957,
+      "weighted_kappa": 0.5904564034235902,
+      "abs_diff_dist": {
+        "0": 171,
+        "1": 114,
+        "2": 21,
+        "3": 4
+      }
+    }
+  }
+}

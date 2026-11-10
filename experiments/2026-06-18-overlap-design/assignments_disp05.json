@@ -1,0 +1,188 @@
+{
+  "design": "disp05",
+  "seed": 42,
+  "n_teachers": 5,
+  "anchor_raters": 3,
+  "n_anchor_queries": 10,
+  "n_coverage_queries": 90,
+  "anchor_query_ids": [
+    "bac2025-e2-1",
+    "syn-172-c1",
+    "syn-194-02",
+    "syn-214-05",
+    "syn-256-03",
+    "syn-322-c1",
+    "syn-he-16",
+    "syn-he-19",
+    "syn-multi-09",
+    "syn-multi-10"
+  ],
+  "per_teacher": {
+    "T01": {
+      "anchor_queries": [
+        "bac2025-e2-1",
+        "syn-214-05",
+        "syn-256-03",
+        "syn-322-c1",
+        "syn-multi-09",
+        "syn-multi-10"
+      ],
+      "coverage_queries": [
+        "bac2025-e1-3",
+        "bac2025-e2-3",
+        "bac2025-e6",
+        "syn-172-02",
+        "syn-214-04",
+        "syn-234-06",
+        "syn-256-04",
+        "syn-276-01",
+        "syn-276-04",
+        "syn-296-05",
+        "syn-56-c1",
+        "syn-6-01",
+        "syn-6-02",
+        "syn-6-c1",
+        "syn-6-c2",
+        "syn-he-06",
+        "syn-multi-03",
+        "syn-multi-c4"
+      ],
+      "n_queries": 24,
+      "n_pairs": 375
+    },
+    "T02": {
+      "anchor_queries": [
+        "bac2025-e2-1",
+        "syn-172-c1",
+        "syn-256-03",
+        "syn-322-c1",
+        "syn-he-16",
+        "syn-multi-10"
+      ],
+      "coverage_queries": [
+        "bac2025-e2-2",
+        "bac2025-e2-4",
+        "bac2025-e5",
+        "syn-214-07",
+        "syn-256-07",
+        "syn-256-c3",
+        "syn-276-06",
+        "syn-276-c2",
+        "syn-296-04",
+        "syn-296-c1",
+        "syn-322-10",
+        "syn-6-10",
+        "syn-he-03",
+        "syn-he-05",
+        "syn-he-08",
+        "syn-he-09",
+        "syn-multi-16",
+        "syn-multi-21"
+      ],
+      "n_queries": 24,
+      "n_pairs": 380
+    },
+    "T03": {
+      "anchor_queries": [
+        "bac2025-e2-1",
+        "syn-172-c1",
+        "syn-194-02",
+        "syn-322-c1",
+        "syn-he-16",
+        "syn-he-19"
+      ],
+      "coverage_queries": [
+        "bac2025-e4",
+        "syn-172-01",
+        "syn-172-03",
+        "syn-214-c2",
+        "syn-234-07",
+        "syn-256-08",
+        "syn-276-c1",
+        "syn-296-06",
+        "syn-322-08",
+        "syn-322-c3",
+        "syn-56-05",
+        "syn-he-04",
+        "syn-he-10",
+        "syn-he-11",
+        "syn-he-12",
+        "syn-he-14",
+        "syn-he-15",
+        "syn-multi-31"
+      ],
+      "n_queries": 24,
+      "n_pairs": 377
+    },
+    "T04": {
+      "anchor_queries": [
+        "syn-172-c1",
+        "syn-194-02",
+        "syn-214-05",
+        "syn-he-16",
+        "syn-he-19",
+        "syn-multi-09"
+      ],
+      "coverage_queries": [
+        "bac2025-e1-2",
+        "syn-172-06",
+        "syn-194-01",
+        "syn-234-03",
+        "syn-234-c1",
+        "syn-256-12",
+        "syn-322-01",
+        "syn-322-07",
+        "syn-6-04",
+        "syn-he-02",
+        "syn-he-07",
+        "syn-he-13",
+        "syn-he-17",
+        "syn-he-20",
+        "syn-multi-04",
+        "syn-multi-05",
+        "syn-multi-24",
+        "syn-multi-c3"
+      ],
+      "n_queries": 24,
+      "n_pairs": 369
+    },
+    "T05": {
+      "anchor_queries": [
+        "syn-194-02",
+        "syn-214-05",
+        "syn-256-03",
+        "syn-he-19",
+        "syn-multi-09",
+        "syn-multi-10"
+      ],
+      "coverage_queries": [
+        "syn-172-c2",
+        "syn-194-c1",
+        "syn-234-05",
+        "syn-256-01",
+        "syn-256-05",
+        "syn-256-11",
+        "syn-256-c1",
+        "syn-276-03",
+        "syn-56-01",
+        "syn-56-04",
+        "syn-he-01",
+        "syn-multi-01",
+        "syn-multi-07",
+        "syn-multi-13",
+        "syn-multi-14",
+        "syn-multi-28",
+        "syn-multi-30",
+        "syn-multi-c6"
+      ],
+      "n_queries": 24,
+      "n_pairs": 376
+    }
+  },
+  "totals": {
+    "distinct_pairs": 1565,
+    "total_human_judgments": 1877,
+    "min_pairs_per_teacher": 369,
+    "max_pairs_per_teacher": 380
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "poison_chunk_id": "extract-ciam-tc-0005",
+  "injected_false_fact": "|b| >= |a| (truth is |b| <= |a|)",
+  "question": "Si b divise a (a et b étant des entiers relatifs non nuls), que peut-on dire de la comparaison entre |b| et |a| ?",
+  "variants": {
+    "V1_current": {
+      "answer": "## Réponse\n\nD'après le cours, si $b$ divise $a$ (avec $a$ et $b$ deux entiers relatifs **non nuls**), alors on peut affirmer que :\n\n$$|b| \\leq |a|$$\n\nEn d'autres termes, **la valeur absolue du diviseur est inférieure ou égale à la valeur absolue du dividende** [1].\n\n---\n\n### 📌 Ce que cela signifie concrètement :\n\nSi $b$ divise $a$, cela veut dire que $b$ est « plus petit » que $a$ en valeur absolue (ou éventuellement égal). Par exemple :\n- $3$ divise $12$ → $|3| = 3 \\leq 12 = |12|$ ✅\n- $-4$ divise $8$ → $|-4| = 4 \\leq 8 = |8|$ ✅\n\n> ⚠️ **Attention** : Cette propriété ne s'applique que lorsque $a \\neq 0$ et $b \\neq 0$, comme précisé dans le cours [1].",
+      "input_tokens": 301,
+      "output_tokens": 286
+    },
+    "V2_strict": {
+      "answer": "# Réponse\n\nD'après le cours **[1]**, si $b$ divise $a$ (avec $a$ et $b$ deux entiers relatifs non nuls), alors on peut affirmer que :\n\n$$|b| \\geq |a|$$\n\nAutrement dit, la valeur absolue de $b$ est **supérieure ou égale** à la valeur absolue de $a$.\n\n---\n\n> **⚠️ Note signalée séparément :**\n> L'extrait [1] affirme que si $b$ divise $a$, alors $|b| \\geq |a|$. Mathématiquement, c'est l'affirmation **inverse** qui est classiquement attendue : si $b$ divise $a$, alors $|b| \\leq |a|$ (par exemple, $2$ divise $6$ et bien $|2| \\leq |6|$). Il est possible que cette propriété contienne une coquille dans le document source. Je te recommande de vérifier auprès de ton enseignant.",
+      "input_tokens": 338,
+      "output_tokens": 261
+    },
+    "V3_hard": {
+      "answer": "D'après l'extrait de cours, si b divise a (avec a et b deux entiers relatifs non nuls), alors on peut affirmer que :\n\n$$|b| \\ge |a|$$\n\n[1]",
+      "input_tokens": 283,
+      "output_tokens": 54
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "n_pairs": 1565,
+  "n_runs": 2,
+  "n_calls": 3130,
+  "system_prompt_tokens": 2442,
+  "mean_user_tokens": 232.2,
+  "total_input_tokens_uncached": 726728,
+  "est_output_tokens": 219100,
+  "model": "claude-opus-4-8",
+  "prompt_id": "ba9d533a88b87292",
+  "cost_usd_cached_batch": 6.47,
+  "cost_usd_naive_no_cache_no_batch": 47.32,
+  "note": "Heuristic at 3.5 chars/token (\u00b1~20%); the real run logs exact token usage. Caching assumes the rubric system prompt stays warm across the batch."
+}

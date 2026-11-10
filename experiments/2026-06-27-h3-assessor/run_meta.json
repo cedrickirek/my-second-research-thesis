@@ -1,0 +1,11 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_id": "ba9d533a88b87292",
+  "n_runs": 2,
+  "n_succeeded": 3130,
+  "n_errored": 0,
+  "input_tokens": 1394278,
+  "output_tokens": 302388,
+  "approx_cost_usd_billed": 7.27,
+  "labels": "experiments\\2026-06-27-h3-assessor\\llm_labels.jsonl"
+}

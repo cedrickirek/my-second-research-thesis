@@ -1,0 +1,11 @@
+# Local SQLite database -- never commit annotation data (anonymise on ingest).
+*.db
+annotations.db
+
+# Streamlit secrets (DATABASE_URL, ADMIN_PASSWORD).
+.streamlit/secrets.toml
+
+__pycache__/
+*.pyc
+.venv/
+venv/

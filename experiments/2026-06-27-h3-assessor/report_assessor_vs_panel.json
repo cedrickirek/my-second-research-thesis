@@ -1,0 +1,47 @@
+{
+  "n_shared_pairs": 1565,
+  "n_only_panel": 0,
+  "n_only_llm": 0,
+  "n_human_files": 10,
+  "assessor_vs_panel": {
+    "n_units": 1565,
+    "n_units_multi_rated": 1565,
+    "n_raters": 2,
+    "krippendorff_alpha_ordinal": 0.5529733114816757,
+    "krippendorff_alpha_nominal": 0.34713324789446887,
+    "two_rater": {
+      "n_pairs": 1565,
+      "exact": 0.5463258785942492,
+      "adjacent": 0.9105431309904153,
+      "binary_relevant": 0.7463258785942491,
+      "cohen_kappa_binary": 0.4197494660299807,
+      "weighted_kappa": 0.537236189721322,
+      "abs_diff_dist": {
+        "0": 855,
+        "1": 570,
+        "2": 125,
+        "3": 15
+      }
+    }
+  },
+  "panel_internal_ceiling": {
+    "krippendorff_alpha_ordinal": 0.463628729883643,
+    "krippendorff_alpha_nominal": 0.16128571428571425,
+    "n_units_multi_rated": 155,
+    "n_raters": 10,
+    "two_rater": {
+      "n_pairs": 155,
+      "exact": 0.3870967741935484,
+      "adjacent": 0.8774193548387097,
+      "binary_relevant": 0.6258064516129033,
+      "cohen_kappa_binary": 0.25690196726731707,
+      "weighted_kappa": 0.47376142174532654,
+      "abs_diff_dist": {
+        "0": 60,
+        "1": 76,
+        "2": 17,
+        "3": 2
+      }
+    }
+  }
+}

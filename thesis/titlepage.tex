@@ -1,0 +1,44 @@
+% HEC title page — injected as page 1 of the report (PDF build) via --include-before-body.
+% Inherits the document's A4 size and fonts. No running header/footer on this page.
+\thispagestyle{empty}
+\begingroup
+\centering
+\null\vspace{1.1cm}
+
+% --- Logos: use real images if present in thesis/ (hec_logo.png, polytechnique_logo.png),
+%     otherwise fall back to text so the build always compiles. ---
+\IfFileExists{../hec_logo.png}{%
+  \includegraphics[height=2.2cm]{../hec_logo.png}%
+  \IfFileExists{../polytechnique_logo.png}{%
+    \hspace{1.5cm}\includegraphics[height=2.2cm]{../polytechnique_logo.png}}{}%
+}{%
+  {\Large\bfseries HEC\,\textsc{Paris}\qquad\qquad ÉCOLE\,\textsc{Polytechnique}}%
+}\par
+
+\vspace{1.4cm}
+{\LARGE\bfseries MSc Data Science for Business}\par
+\vspace{0.3cm}
+{\Large\itshape RESEARCH PAPER}\par
+\vspace{0.6cm}
+{\large Academic Year 2025 -- 2026}\par
+
+\vspace{1.9cm}
+{\fontsize{23}{28}\selectfont\bfseries Curriculum-Grounded Retrieval-Augmented
+Generation for Terminale~C Mathematics Self-Tutoring in Côte d'Ivoire\par}
+
+\vspace{2.1cm}
+{\large\bfseries Cedric Emmanuel KIRE}\par
+
+\vspace{1.3cm}
+{\large\itshape Under the supervision of}\par
+\vspace{0.2cm}
+{\large Prof.\ Paul ASSALE}\par
+
+\vspace{0.5cm}
+{\large June 30\textsuperscript{th}, 2026}\par
+
+\vfill
+{\itshape $\blacksquare$~PUBLIC REPORT \qquad $\square$~CONFIDENTIAL REPORT}\par
+\vspace{1.2cm}
+\endgroup
+\clearpage

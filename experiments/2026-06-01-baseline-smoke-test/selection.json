@@ -1,0 +1,53 @@
+{
+  "description": "10-chunk coverage subset for the baseline retrieval smoke test",
+  "source_corpus": "data\\corpus\\chunks.jsonl",
+  "source_note": "v1 corpus = CIAM Terminale C, Chapter 2 only (84 chunks)",
+  "selection": "deterministic (sorted by chunk_id), not random",
+  "recipe_clean": {
+    "definition": 2,
+    "theorem": 2,
+    "theory": 1,
+    "example": 2,
+    "solution": 1,
+    "proof": 1
+  },
+  "n_hard_dropped_figure": 1,
+  "selected_ids_by_slot": {
+    "hard (has_dropped_figure)": [
+      "extract-ciam-tc-0042"
+    ],
+    "definition": [
+      "extract-ciam-tc-0002",
+      "extract-ciam-tc-0020"
+    ],
+    "theorem": [
+      "extract-ciam-tc-0005",
+      "extract-ciam-tc-0007"
+    ],
+    "theory": [
+      "extract-ciam-tc-0011"
+    ],
+    "example": [
+      "extract-ciam-tc-0003",
+      "extract-ciam-tc-0010"
+    ],
+    "solution": [
+      "extract-ciam-tc-0068"
+    ],
+    "proof": [
+      "extract-ciam-tc-0006"
+    ]
+  },
+  "selected_ids": [
+    "extract-ciam-tc-0002",
+    "extract-ciam-tc-0003",
+    "extract-ciam-tc-0005",
+    "extract-ciam-tc-0006",
+    "extract-ciam-tc-0007",
+    "extract-ciam-tc-0010",
+    "extract-ciam-tc-0011",
+    "extract-ciam-tc-0020",
+    "extract-ciam-tc-0042",
+    "extract-ciam-tc-0068"
+  ]
+}

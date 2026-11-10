@@ -1,0 +1,79 @@
+date: 2026-06-10
+slug: official-corpus-build
+description: >
+  Build the v2 Tutorly retrieval corpus by applying the validated marker OCR
+  pipeline to the full in-scope document set: 10 CIAM Terminale C chapters
+  (analysis, algebra, probability) plus the 2 INDEXED BAC serie C papers
+  (2022, 2024); BAC 2025 is the held-out evaluation year and is NOT indexed
+  (see the comment in the documents list below). Raw marker
+  output from the 2026-06-09 trial run is promoted into data/ocr/, cleaned of
+  vision-model degeneration loops (src/ocr/clean.py), then chunked
+  (src/corpus/) into data/corpus/chunks.jsonl. Supersedes the v1 single-chapter
+  corpus. No new ground truth is collected: the 2026-05-12 marker validation
+  already certified the method (CER 11.5%, equation F1 87%); this run applies
+  it and reports an automated quality sweep in results.json.
+
+# Geometry chapters (isometries, similitudes, conics, barycentres, space
+# geometry) are deliberately EXCLUDED. Under the figure-drop policy
+# (decisions/2026-05-13-figure-handling.md) most geometry chunks would not be
+# self-contained, since their meaning lives in dropped figures. Consequence:
+# geometry appears in the BAC papers but has no textbook theory to ground it,
+# so the labelled query set must avoid geometry. Recorded in DATA_CARD v2.
+scope_note: geometry-excluded-pending-figure-handling
+
+params:
+  min_repeats: 20         # src/ocr/clean.py degeneration-loop threshold
+  max_phrase_words: 4
+  review_repeat_floor: 10  # report (do not remove) near-threshold runs >= this
+  seed: 42
+
+defaults:
+  level: "Terminale C"
+  subject: "mathematics"
+
+# Each document is bootstrapped once from the 2026-06-09 trial (raw_md, which
+# lives outside the repo) into data/ocr/<slug>/<slug>.md, then cleaned and
+# chunked. After the raw .md is committed, raw_md is no longer needed.
+documents:
+  - slug: 6_ciam_tc
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/6_ciam_tc/6_ciam_tc.md
+    source: "CIAM Terminale C — Arithmétique dans Z (divisibilité, congruences, PGCD/PPCM)"
+  - slug: 56_ciam_tc
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/56_ciam_tc/56_ciam_tc.md
+    source: "CIAM Terminale C — Nombres complexes"
+  - slug: 172_ciam_tc
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/172_ciam_tc/172_ciam_tc.md
+    source: "CIAM Terminale C — Dénombrement et probabilités"
+  - slug: 194_ciam_tc
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/194_ciam_tc/194_ciam_tc.md
+    source: "CIAM Terminale C — Limites et continuité"
+  - slug: 214_ciam_tc
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/214_ciam_tc/214_ciam_tc.md
+    source: "CIAM Terminale C — Dérivation"
+  - slug: 234_ciam_tc
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/234_ciam_tc/234_ciam_tc.md
+    source: "CIAM Terminale C — Primitives et fonction logarithme népérien"
+  - slug: 256_ciam_tc
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/256_ciam_tc/256_ciam_tc.md
+    source: "CIAM Terminale C — Fonction exponentielle"
+  - slug: 276_ciam_tc
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/276_ciam_tc/276_ciam_tc.md
+    source: "CIAM Terminale C — Suites numériques"
+  - slug: 296_ciam_tc
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/296_ciam_tc/296_ciam_tc.md
+    source: "CIAM Terminale C — Calcul intégral"
+  - slug: 322_ciam_tc
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/322_ciam_tc/322_ciam_tc.md
+    source: "CIAM Terminale C — Équations différentielles"
+  - slug: bac-2022-maths-tc
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/bac-2022-maths-tc/bac-2022-maths-tc.md
+    source: "BAC série C (Côte d'Ivoire) — Mathématiques, session 2022"
+  - slug: bac-2024-maths-serie-c
+    raw_md: ../trial_june-9th-ocr_results/content/output_md/bac-2024-maths-serie-c/bac-2024-maths-serie-c.md
+    source: "BAC série C (Côte d'Ivoire) — Mathématiques, session 2024"
+  # BAC 2025 is the HELD-OUT evaluation year: it is the source of the 9 BAC-2025
+  # queries in data/eval/queries.jsonl and must NEVER be indexed, or those
+  # queries could retrieve their own solutions (data leakage). Its OCR stays in
+  # data/ocr/bac-2025-maths-tc/ for query provenance, but it is deliberately
+  # absent from this document list. Do not re-add it.
+  # See decisions/2026-06-17-bac-2025-held-out.md.

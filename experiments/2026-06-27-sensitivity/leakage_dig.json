@@ -1,0 +1,123 @@
+{
+  "by_slice": {
+    "synth": {
+      "n": 91,
+      "bm25_ndcg@5": 0.4984,
+      "dense_ndcg@5": 0.4761,
+      "hybrid_ndcg@5": 0.5397,
+      "instructional_ndcg@5": 0.5164,
+      "bm25_recall@5": 0.3757,
+      "dense_recall@5": 0.3691,
+      "hybrid_recall@5": 0.4186,
+      "instructional_recall@5": 0.3854
+    },
+    "bac2025_heldout": {
+      "n": 9,
+      "bm25_ndcg@5": 0.3896,
+      "dense_ndcg@5": 0.4723,
+      "hybrid_ndcg@5": 0.3812,
+      "instructional_ndcg@5": 0.3742,
+      "bm25_recall@5": 0.3167,
+      "dense_recall@5": 0.4056,
+      "hybrid_recall@5": 0.3361,
+      "instructional_recall@5": 0.2944
+    },
+    "all": {
+      "n": 100,
+      "bm25_ndcg@5": 0.4886,
+      "dense_ndcg@5": 0.4758,
+      "hybrid_ndcg@5": 0.5254,
+      "instructional_ndcg@5": 0.5036,
+      "bm25_recall@5": 0.3702,
+      "dense_recall@5": 0.3725,
+      "hybrid_recall@5": 0.4108,
+      "instructional_recall@5": 0.3769
+    }
+  },
+  "bac_query_detail": [
+    {
+      "query_id": "bac2025-e6",
+      "dense_ndcg@5": 0.83,
+      "hybrid_ndcg@5": 0.0,
+      "delta": -0.83,
+      "n_relevant": 1,
+      "query": "Dans un jeu de fléchettes, atteindre le disque central rapporte 13 points et la "
+    },
+    {
+      "query_id": "bac2025-e1-2",
+      "dense_ndcg@5": 0.566,
+      "hybrid_ndcg@5": 0.143,
+      "delta": -0.424,
+      "n_relevant": 2,
+      "query": "Calcule la limite de ln(1+2x)/(3x) lorsque x tend vers 0."
+    },
+    {
+      "query_id": "bac2025-e4",
+      "dense_ndcg@5": 0.684,
+      "hybrid_ndcg@5": 0.602,
+      "delta": -0.083,
+      "n_relevant": 8,
+      "query": "Une urne U1 contient deux boules : l'une porte le nombre 1, l'autre un entier re"
+    },
+    {
+      "query_id": "bac2025-e1-3",
+      "dense_ndcg@5": 0.466,
+      "hybrid_ndcg@5": 0.392,
+      "delta": -0.074,
+      "n_relevant": 8,
+      "query": "Détermine une primitive sur R de la fonction x ↦ sin(-2x + π/3)."
+    },
+    {
+      "query_id": "bac2025-e2-2",
+      "dense_ndcg@5": 0.494,
+      "hybrid_ndcg@5": 0.504,
+      "delta": 0.011,
+      "n_relevant": 4,
+      "query": "Détermine un argument du nombre complexe (1 - √2)·e^(iπ/3)."
+    },
+    {
+      "query_id": "bac2025-e2-1",
+      "dense_ndcg@5": 0.6,
+      "hybrid_ndcg@5": 0.619,
+      "delta": 0.019,
+      "n_relevant": 5,
+      "query": "Si h est une fonction continue et paire sur l'intervalle [-3;3], à quoi est égal"
+    },
+    {
+      "query_id": "bac2025-e5",
+      "dense_ndcg@5": 0.379,
+      "hybrid_ndcg@5": 0.426,
+      "delta": 0.047,
+      "n_relevant": 4,
+      "query": "Soit f définie sur [0;+∞[ par f(x) = x(ln x)² + x si x>0 et f(0)=0. Étudie la co"
+    },
+    {
+      "query_id": "bac2025-e2-3",
+      "dense_ndcg@5": 0.161,
+      "hybrid_ndcg@5": 0.372,
+      "delta": 0.211,
+      "n_relevant": 2,
+      "query": "Calcule l'intégrale de x³·cos(x) de -π à π."
+    },
+    {
+      "query_id": "bac2025-e2-4",
+      "dense_ndcg@5": 0.069,
+      "hybrid_ndcg@5": 0.372,
+      "delta": 0.303,
+      "n_relevant": 2,
+      "query": "Soit E et F deux événements tels que P(E)=0,1, P(F)=0,05 et P_E(F)=0,2. Calcule "
+    }
+  ],
+  "bac9_h1_bootstrap": {
+    "mean": -0.088,
+    "ci95": [
+      -0.3147,
+      0.0973
+    ],
+    "frac_negative": 0.788
+  },
+  "lexical_overlap": {
+    "synth_mean_query_term_coverage": 0.5549,
+    "bac_mean_query_term_coverage": 0.4556
+  }
+}

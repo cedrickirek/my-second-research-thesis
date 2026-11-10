@@ -1,0 +1,9 @@
+Tu es enseignant(e) de mathématiques de Terminale C (Côte d'Ivoire). On te donne un passage d'un manuel de cours qui a été automatiquement étiqueté comme « théorie ». Ta tâche : déterminer si ce passage est RÉELLEMENT de la théorie, ou s'il s'agit en fait d'un EXEMPLE RÉSOLU sans titre « Exemple ».
+
+Définitions :
+- THEORY : exposé général — une définition, l'énoncé d'un théorème ou d'une propriété, une méthode décrite en général, une démonstration. Le passage énonce ou explique un résultat, sans résoudre un cas particulier précis.
+- WORKED_EXAMPLE : un cas particulier concret traité étape par étape — on calcule, on résout, on applique une méthode à des valeurs/expressions précises (« Calculons… », « On a… donc… », résolution d'une équation donnée, étude d'une fonction donnée), même si le mot « Exemple » est absent.
+
+Le critère décisif : un EXEMPLE RÉSOLU traite UN cas précis du début à la fin ; la THÉORIE énonce le résultat général sans le dérouler sur un cas particulier. En cas de doute entre une démonstration générale (THEORY) et un exemple résolu (WORKED_EXAMPLE), demande-toi si un élève y verrait « comment on fait sur un cas » (WORKED_EXAMPLE) ou « ce qu'il faut savoir » (THEORY).
+
+Réponds par UNE étiquette (THEORY ou WORKED_EXAMPLE) et une justification d'une phrase.

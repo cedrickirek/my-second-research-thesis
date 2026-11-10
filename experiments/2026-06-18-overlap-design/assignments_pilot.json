@@ -1,0 +1,39 @@
+{
+  "design": "pilot",
+  "seed": 43,
+  "n_teachers": 2,
+  "note": "BOTH teachers grade ALL pilot queries (redundancy 2). Purpose: test app + rubric, measure preliminary agreement, lock rubric v0.1 -> v1.0. Pilot labels are graded under v0.1 and are for process calibration, NOT final gold; re-grade under v1.0 at dispatch.",
+  "pilot_query_ids": [
+    "bac2025-e2-1",
+    "syn-234-c1",
+    "syn-322-01",
+    "syn-he-11",
+    "syn-multi-10"
+  ],
+  "per_teacher": {
+    "T01": {
+      "queries": [
+        "bac2025-e2-1",
+        "syn-234-c1",
+        "syn-322-01",
+        "syn-he-11",
+        "syn-multi-10"
+      ],
+      "n_pairs": 80
+    },
+    "T02": {
+      "queries": [
+        "bac2025-e2-1",
+        "syn-234-c1",
+        "syn-322-01",
+        "syn-he-11",
+        "syn-multi-10"
+      ],
+      "n_pairs": 80
+    }
+  },
+  "totals": {
+    "distinct_pairs": 80,
+    "total_human_judgments": 160
+  }
+}

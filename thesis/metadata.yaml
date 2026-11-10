@@ -1,0 +1,13 @@
+---
+title: "Curriculum-Grounded Retrieval-Augmented Generation for Terminale C Mathematics Self-Tutoring in Côte d'Ivoire"
+author: "Cedric Emmanuel KIRE"
+date: "June 2026"
+lang: en
+fontsize: 12pt
+linestretch: 1.1
+geometry: "margin=2cm"
+documentclass: report
+numbersections: false
+nocite: |
+  @*
+---

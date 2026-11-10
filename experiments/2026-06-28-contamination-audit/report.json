@@ -1,0 +1,39 @@
+{
+  "n_theory_bucket_chunks": 11,
+  "n_runs": 1,
+  "test_retest_agreement": 1.0,
+  "n_worked_example": 3,
+  "contamination_rate": 0.2727,
+  "contamination_rate_pct": 27.3,
+  "wilson_95ci_pct": [
+    9.7,
+    56.6
+  ],
+  "by_source_content_type": {
+    "definition": {
+      "contaminated": 0,
+      "total": 1,
+      "pct": 0.0
+    },
+    "proof": {
+      "contaminated": 0,
+      "total": 2,
+      "pct": 0.0
+    },
+    "remark": {
+      "contaminated": 0,
+      "total": 1,
+      "pct": 0.0
+    },
+    "theorem": {
+      "contaminated": 0,
+      "total": 1,
+      "pct": 0.0
+    },
+    "theory": {
+      "contaminated": 3,
+      "total": 6,
+      "pct": 50.0
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "model": "claude-opus-4-8",
+  "prompt_id": "81a7d8a86e0c2008",
+  "n_runs": 2,
+  "n_succeeded": 11,
+  "n_errored": 1017,
+  "input_tokens": 13603,
+  "output_tokens": 959,
+  "approx_cost_usd_billed": 0.05
+}

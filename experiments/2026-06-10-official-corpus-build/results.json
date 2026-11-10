@@ -1,0 +1,361 @@
+{
+  "build_date": "2026-06-10",
+  "params": {
+    "min_repeats": 20,
+    "max_phrase_words": 4,
+    "review_repeat_floor": 10,
+    "seed": 42
+  },
+  "scope_note": "geometry-excluded-pending-figure-handling",
+  "corpus": {
+    "documents": 12,
+    "chunks": 722,
+    "empty_chunks_dropped": 91,
+    "content_type": {
+      "theory": 185,
+      "remark": 82,
+      "theorem": 142,
+      "example": 141,
+      "proof": 57,
+      "solution": 33,
+      "exercise": 34,
+      "definition": 48
+    },
+    "with_dropped_figure": 113,
+    "with_hallucination_flag": 106,
+    "flag_incidence": {
+      "suspicious_short_equation": 23,
+      "equations_without_prose": 38,
+      "layout_artefact_in_equation": 40,
+      "unbalanced_braces": 9,
+      "ocr_degeneration_loop": 3
+    },
+    "total_equations": 5313,
+    "total_prose_chars": 424010
+  },
+  "cleaning": {
+    "loops_removed": 4,
+    "chars_removed": 7301,
+    "review_candidates": 0,
+    "documents_affected": [
+      "56_ciam_tc",
+      "256_ciam_tc",
+      "276_ciam_tc"
+    ]
+  },
+  "per_document": [
+    {
+      "slug": "6_ciam_tc",
+      "source": "CIAM Terminale C — Arithmétique dans Z (divisibilité, congruences, PGCD/PPCM)",
+      "raw_chars": 60950,
+      "clean_chars": 60950,
+      "chars_removed": 0,
+      "loops_removed": 0,
+      "review_candidates": 0,
+      "empty_dropped": 10,
+      "chunks": 137,
+      "content_type": {
+        "theory": 23,
+        "remark": 16,
+        "theorem": 30,
+        "example": 30,
+        "proof": 21,
+        "solution": 7,
+        "exercise": 3,
+        "definition": 7
+      },
+      "figure_drops": 8,
+      "flagged": 11,
+      "equations": 511,
+      "loop_events": []
+    },
+    {
+      "slug": "56_ciam_tc",
+      "source": "CIAM Terminale C — Nombres complexes",
+      "raw_chars": 63782,
+      "clean_chars": 61776,
+      "chars_removed": 2024,
+      "loops_removed": 1,
+      "review_candidates": 0,
+      "empty_dropped": 8,
+      "chunks": 87,
+      "content_type": {
+        "definition": 10,
+        "remark": 10,
+        "theorem": 18,
+        "theory": 22,
+        "example": 14,
+        "proof": 7,
+        "solution": 3,
+        "exercise": 3
+      },
+      "figure_drops": 17,
+      "flagged": 13,
+      "equations": 732,
+      "loop_events": [
+        {
+          "line": 462,
+          "phrase": "the control of",
+          "repeats": 135,
+          "chars": 2024
+        }
+      ]
+    },
+    {
+      "slug": "172_ciam_tc",
+      "source": "CIAM Terminale C — Dénombrement et probabilités",
+      "raw_chars": 47978,
+      "clean_chars": 47978,
+      "chars_removed": 0,
+      "loops_removed": 0,
+      "review_candidates": 0,
+      "empty_dropped": 9,
+      "chunks": 70,
+      "content_type": {
+        "theory": 12,
+        "theorem": 13,
+        "proof": 7,
+        "remark": 9,
+        "example": 15,
+        "exercise": 3,
+        "definition": 9,
+        "solution": 2
+      },
+      "figure_drops": 6,
+      "flagged": 5,
+      "equations": 323,
+      "loop_events": []
+    },
+    {
+      "slug": "194_ciam_tc",
+      "source": "CIAM Terminale C — Limites et continuité",
+      "raw_chars": 45260,
+      "clean_chars": 45260,
+      "chars_removed": 0,
+      "loops_removed": 0,
+      "review_candidates": 0,
+      "empty_dropped": 5,
+      "chunks": 67,
+      "content_type": {
+        "theory": 15,
+        "remark": 10,
+        "theorem": 17,
+        "example": 14,
+        "solution": 1,
+        "exercise": 1,
+        "definition": 6,
+        "proof": 3
+      },
+      "figure_drops": 19,
+      "flagged": 8,
+      "equations": 568,
+      "loop_events": []
+    },
+    {
+      "slug": "214_ciam_tc",
+      "source": "CIAM Terminale C — Dérivation",
+      "raw_chars": 40708,
+      "clean_chars": 40708,
+      "chars_removed": 0,
+      "loops_removed": 0,
+      "review_candidates": 0,
+      "empty_dropped": 13,
+      "chunks": 53,
+      "content_type": {
+        "theory": 30,
+        "definition": 2,
+        "example": 7,
+        "remark": 5,
+        "theorem": 6,
+        "proof": 1,
+        "exercise": 2
+      },
+      "figure_drops": 7,
+      "flagged": 14,
+      "equations": 446,
+      "loop_events": []
+    },
+    {
+      "slug": "234_ciam_tc",
+      "source": "CIAM Terminale C — Primitives et fonction logarithme népérien",
+      "raw_chars": 47961,
+      "clean_chars": 47961,
+      "chars_removed": 0,
+      "loops_removed": 0,
+      "review_candidates": 0,
+      "empty_dropped": 17,
+      "chunks": 67,
+      "content_type": {
+        "theory": 12,
+        "definition": 3,
+        "example": 18,
+        "theorem": 15,
+        "remark": 6,
+        "proof": 6,
+        "solution": 5,
+        "exercise": 2
+      },
+      "figure_drops": 9,
+      "flagged": 9,
+      "equations": 580,
+      "loop_events": []
+    },
+    {
+      "slug": "256_ciam_tc",
+      "source": "CIAM Terminale C — Fonction exponentielle",
+      "raw_chars": 39193,
+      "clean_chars": 37182,
+      "chars_removed": 2029,
+      "loops_removed": 1,
+      "review_candidates": 0,
+      "empty_dropped": 17,
+      "chunks": 70,
+      "content_type": {
+        "definition": 3,
+        "remark": 7,
+        "theorem": 13,
+        "proof": 4,
+        "theory": 26,
+        "example": 11,
+        "solution": 5,
+        "exercise": 1
+      },
+      "figure_drops": 12,
+      "flagged": 18,
+      "equations": 482,
+      "loop_events": [
+        {
+          "line": 981,
+          "phrase": "of the latter",
+          "repeats": 145,
+          "chars": 2029
+        }
+      ]
+    },
+    {
+      "slug": "276_ciam_tc",
+      "source": "CIAM Terminale C — Suites numériques",
+      "raw_chars": 49717,
+      "clean_chars": 46503,
+      "chars_removed": 3248,
+      "loops_removed": 2,
+      "review_candidates": 0,
+      "empty_dropped": 1,
+      "chunks": 51,
+      "content_type": {
+        "theory": 9,
+        "definition": 4,
+        "example": 11,
+        "remark": 11,
+        "theorem": 10,
+        "proof": 2,
+        "exercise": 2,
+        "solution": 2
+      },
+      "figure_drops": 6,
+      "flagged": 7,
+      "equations": 590,
+      "loop_events": [
+        {
+          "line": 223,
+          "phrase": "the same of",
+          "repeats": 169,
+          "chars": 2027
+        },
+        {
+          "line": 817,
+          "phrase": "f(x) = x and",
+          "repeats": 94,
+          "chars": 1221
+        }
+      ]
+    },
+    {
+      "slug": "296_ciam_tc",
+      "source": "CIAM Terminale C — Calcul intégral",
+      "raw_chars": 49558,
+      "clean_chars": 49558,
+      "chars_removed": 0,
+      "loops_removed": 0,
+      "review_candidates": 0,
+      "empty_dropped": 8,
+      "chunks": 71,
+      "content_type": {
+        "theory": 24,
+        "definition": 3,
+        "example": 13,
+        "theorem": 15,
+        "remark": 6,
+        "proof": 6,
+        "exercise": 2,
+        "solution": 2
+      },
+      "figure_drops": 24,
+      "flagged": 14,
+      "equations": 487,
+      "loop_events": []
+    },
+    {
+      "slug": "322_ciam_tc",
+      "source": "CIAM Terminale C — Équations différentielles",
+      "raw_chars": 34826,
+      "clean_chars": 34826,
+      "chars_removed": 0,
+      "loops_removed": 0,
+      "review_candidates": 0,
+      "empty_dropped": 1,
+      "chunks": 33,
+      "content_type": {
+        "theory": 8,
+        "exercise": 3,
+        "solution": 6,
+        "theorem": 5,
+        "example": 8,
+        "definition": 1,
+        "remark": 2
+      },
+      "figure_drops": 5,
+      "flagged": 5,
+      "equations": 451,
+      "loop_events": []
+    },
+    {
+      "slug": "bac-2022-maths-tc",
+      "source": "BAC série C (Côte d'Ivoire) — Mathématiques, session 2022",
+      "raw_chars": 11928,
+      "clean_chars": 11928,
+      "chars_removed": 0,
+      "loops_removed": 0,
+      "review_candidates": 0,
+      "empty_dropped": 1,
+      "chunks": 7,
+      "content_type": {
+        "theory": 1,
+        "exercise": 6
+      },
+      "figure_drops": 0,
+      "flagged": 1,
+      "equations": 89,
+      "loop_events": []
+    },
+    {
+      "slug": "bac-2024-maths-serie-c",
+      "source": "BAC série C (Côte d'Ivoire) — Mathématiques, session 2024",
+      "raw_chars": 7387,
+      "clean_chars": 7387,
+      "chars_removed": 0,
+      "loops_removed": 0,
+      "review_candidates": 0,
+      "empty_dropped": 1,
+      "chunks": 9,
+      "content_type": {
+        "theory": 3,
+        "exercise": 6
+      },
+      "figure_drops": 0,
+      "flagged": 1,
+      "equations": 54,
+      "loop_events": []
+    }
+  ]
+}

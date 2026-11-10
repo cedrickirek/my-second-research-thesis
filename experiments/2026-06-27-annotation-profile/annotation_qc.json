@@ -1,0 +1,680 @@
+{
+  "overall_mean": 1.1901162790697675,
+  "rater_profile": {
+    "T01": {
+      "n": 175,
+      "mean": 0.966,
+      "pct_relevant": 0.263,
+      "pct": {
+        "0": 0.314,
+        "1": 0.423,
+        "2": 0.246,
+        "3": 0.017
+      },
+      "modal_grade": 1,
+      "flags": [
+        "never_top(3)"
+      ]
+    },
+    "T02": {
+      "n": 167,
+      "mean": 1.012,
+      "pct_relevant": 0.257,
+      "pct": {
+        "0": 0.353,
+        "1": 0.389,
+        "2": 0.15,
+        "3": 0.108
+      },
+      "modal_grade": 1,
+      "flags": []
+    },
+    "T03": {
+      "n": 169,
+      "mean": 0.959,
+      "pct_relevant": 0.189,
+      "pct": {
+        "0": 0.302,
+        "1": 0.509,
+        "2": 0.118,
+        "3": 0.071
+      },
+      "modal_grade": 1,
+      "flags": []
+    },
+    "T04": {
+      "n": 166,
+      "mean": 1.687,
+      "pct_relevant": 0.62,
+      "pct": {
+        "0": 0.127,
+        "1": 0.253,
+        "2": 0.428,
+        "3": 0.193
+      },
+      "modal_grade": 2,
+      "flags": [
+        "lenient"
+      ]
+    },
+    "T05": {
+      "n": 165,
+      "mean": 1.352,
+      "pct_relevant": 0.509,
+      "pct": {
+        "0": 0.418,
+        "1": 0.073,
+        "2": 0.248,
+        "3": 0.261
+      },
+      "modal_grade": 0,
+      "flags": [
+        "U-shaped/near-binary"
+      ]
+    },
+    "T06": {
+      "n": 177,
+      "mean": 1.678,
+      "pct_relevant": 0.576,
+      "pct": {
+        "0": 0.192,
+        "1": 0.232,
+        "2": 0.282,
+        "3": 0.294
+      },
+      "modal_grade": 3,
+      "flags": [
+        "lenient"
+      ]
+    },
+    "T07": {
+      "n": 179,
+      "mean": 0.804,
+      "pct_relevant": 0.251,
+      "pct": {
+        "0": 0.453,
+        "1": 0.296,
+        "2": 0.246,
+        "3": 0.006
+      },
+      "modal_grade": 0,
+      "flags": [
+        "severe",
+        "never_top(3)"
+      ]
+    },
+    "T08": {
+      "n": 175,
+      "mean": 0.886,
+      "pct_relevant": 0.257,
+      "pct": {
+        "0": 0.451,
+        "1": 0.291,
+        "2": 0.177,
+        "3": 0.08
+      },
+      "modal_grade": 0,
+      "flags": [
+        "severe"
+      ]
+    },
+    "T09": {
+      "n": 174,
+      "mean": 1.356,
+      "pct_relevant": 0.471,
+      "pct": {
+        "0": 0.276,
+        "1": 0.253,
+        "2": 0.31,
+        "3": 0.161
+      },
+      "modal_grade": 2,
+      "flags": []
+    },
+    "T10": {
+      "n": 173,
+      "mean": 1.225,
+      "pct_relevant": 0.335,
+      "pct": {
+        "0": 0.162,
+        "1": 0.503,
+        "2": 0.283,
+        "3": 0.052
+      },
+      "modal_grade": 1,
+      "flags": []
+    }
+  },
+  "anchor": {
+    "n_anchor_pairs": 155,
+    "raters_per_anchor_pair": {
+      "2": 155
+    },
+    "spread_hist": {
+      "0": 60,
+      "1": 76,
+      "2": 17,
+      "3": 2
+    },
+    "n_flagged": 19,
+    "rater_involvement": {
+      "T09": 9,
+      "T10": 7,
+      "T04": 5,
+      "T03": 4,
+      "T08": 4,
+      "T07": 3,
+      "T05": 2,
+      "T06": 2,
+      "T01": 1,
+      "T02": 1
+    },
+    "disagreements": [
+      {
+        "pair_id": "syn-194-02__256-ciam-tc-0025",
+        "spread": 3,
+        "grades": {
+          "T03": 0,
+          "T04": 3
+        },
+        "query_id": "syn-194-02",
+        "query_text": "Calcule la limite en +infini de √(x² + 3x) - x.",
+        "content_type": "example",
+        "heading": "Résolution de l'équation (3)",
+        "topic": "Résolutions d'équations et d'inéquations",
+        "rank_hybrid": 2,
+        "retrieved_by": [
+          "hybrid",
+          "instructional"
+        ]
+      },
+      {
+        "pair_id": "syn-he-19__6-ciam-tc-0139",
+        "spread": 3,
+        "grades": {
+          "T08": 3,
+          "T09": 0
+        },
+        "query_id": "syn-he-19",
+        "query_text": "Un circuit électrique vérifie L·i'(t) + R·i(t) = E, où L, R et E sont des constantes positives. Résous cette équation différentielle, sachant que i(0) = 0.",
+        "content_type": "theory",
+        "heading": "Equations du type ax + by = c",
+        "topic": "PPCM et PGCD de deux entiers relatifs > Exemples d'utilisation",
+        "rank_hybrid": 10,
+        "retrieved_by": [
+          "bm25",
+          "hybrid"
+        ]
+      },
+      {
+        "pair_id": "syn-172-c1__172-ciam-tc-0068",
+        "spread": 2,
+        "grades": {
+          "T02": 0,
+          "T03": 2
+        },
+        "query_id": "syn-172-c1",
+        "query_text": "Je confonds toujours les arrangements et les combinaisons. Comment savoir lequel utiliser dans un problème de dénombrement ?",
+        "content_type": "theory",
+        "heading": "Introduction",
+        "topic": "Variable aléatoire > Notion de variable aléatoire",
+        "rank_hybrid": null,
+        "retrieved_by": [
+          "bm25"
+        ]
+      },
+      {
+        "pair_id": "syn-194-02__234-ciam-tc-0062",
+        "spread": 2,
+        "grades": {
+          "T03": 0,
+          "T04": 2
+        },
+        "query_id": "syn-194-02",
+        "query_text": "Calcule la limite en +infini de √(x² + 3x) - x.",
+        "content_type": "example",
+        "heading": "Résolution de l'équation (3)",
+        "topic": "Résolutions d'équations",
+        "rank_hybrid": null,
+        "retrieved_by": [
+          "dense"
+        ]
+      },
+      {
+        "pair_id": "syn-194-02__56-ciam-tc-0093",
+        "spread": 2,
+        "grades": {
+          "T03": 0,
+          "T04": 2
+        },
+        "query_id": "syn-194-02",
+        "query_text": "Calcule la limite en +infini de √(x² + 3x) - x.",
+        "content_type": "proof",
+        "heading": "émonstration",
+        "topic": "Nombres complexes > Trigonométrie et nombres complexes",
+        "rank_hybrid": null,
+        "retrieved_by": [
+          "bm25"
+        ]
+      },
+      {
+        "pair_id": "syn-214-05__214-ciam-tc-0073",
+        "spread": 2,
+        "grades": {
+          "T04": 1,
+          "T05": 3
+        },
+        "query_id": "syn-214-05",
+        "query_text": "Détermine une équation de la tangente à la courbe de f(x) = x³ - 2x au point d'abscisse 1.",
+        "content_type": "exercise",
+        "heading": "Exercices",
+        "topic": "Fonctions dérivées > Fonctions trigonométriques",
+        "rank_hybrid": 3,
+        "retrieved_by": [
+          "bm25",
+          "dense",
+          "hybrid"
+        ]
+      },
+      {
+        "pair_id": "syn-214-05__256-ciam-tc-0026",
+        "spread": 2,
+        "grades": {
+          "T04": 2,
+          "T05": 0
+        },
+        "query_id": "syn-214-05",
+        "query_text": "Détermine une équation de la tangente à la courbe de f(x) = x³ - 2x au point d'abscisse 1.",
+        "content_type": "example",
+        "heading": "Résolution de l'équation (4)",
+        "topic": "Résolutions d'équations et d'inéquations",
+        "rank_hybrid": null,
+        "retrieved_by": [
+          "dense"
+        ]
+      },
+      {
+        "pair_id": "syn-322-c1__322-ciam-tc-0020",
+        "spread": 2,
+        "grades": {
+          "T06": 3,
+          "T07": 1
+        },
+        "query_id": "syn-322-c1",
+        "query_text": "Je ne comprends pas ce que veut dire 'résoudre' une équation différentielle. On cherche un nombre ou bien une fonction ?",
+        "content_type": "exercise",
+        "heading": "Exercices",
+        "topic": "2. Applications",
+        "rank_hybrid": 10,
+        "retrieved_by": [
+          "bm25",
+          "hybrid"
+        ]
+      },
+      {
+        "pair_id": "syn-322-c1__322-ciam-tc-0030",
+        "spread": 2,
+        "grades": {
+          "T06": 3,
+          "T07": 1
+        },
+        "query_id": "syn-322-c1",
+        "query_text": "Je ne comprends pas ce que veut dire 'résoudre' une équation différentielle. On cherche un nombre ou bien une fonction ?",
+        "content_type": "theory",
+        "heading": "Équation caractéristique",
+        "topic": "Equations du type y'' + ay' + by = 0 > Équations du type y'' + ay' + by = 0",
+        "rank_hybrid": 9,
+        "retrieved_by": [
+          "bm25",
+          "hybrid"
+        ]
+      },
+      {
+        "pair_id": "syn-he-16__172-ciam-tc-0018",
+        "spread": 2,
+        "grades": {
+          "T07": 2,
+          "T08": 0
+        },
+        "query_id": "syn-he-16",
+        "query_text": "Un QCM comporte 10 questions, chacune avec 4 réponses possibles dont une seule correcte. Un candidat répond au hasard. Quelle est la probabilité qu'il obtienne au moins 8 bonnes réponses ?",
+        "content_type": "example",
+        "heading": "Exemples",
+        "topic": "Formule du binôme > Outils de dénombrement",
+        "rank_hybrid": 8,
+        "retrieved_by": [
+          "hybrid"
+        ]
+      },
+      {
+        "pair_id": "syn-he-19__322-ciam-tc-0004",
+        "spread": 2,
+        "grades": {
+          "T08": 1,
+          "T09": 3
+        },
+        "query_id": "syn-he-19",
+        "query_text": "Un circuit électrique vérifie L·i'(t) + R·i(t) = E, où L, R et E sont des constantes positives. Résous cette équation différentielle, sachant que i(0) = 0.",
+        "content_type": "theory",
+        "heading": "Equations du type y' = f(x)",
+        "topic": "Notion d'équation différentielle > Équations de types y' = f(x) et y'' = g(x)",
+        "rank_hybrid": null,
+        "retrieved_by": [
+          "bm25"
+        ]
+      },
+      {
+        "pair_id": "syn-he-19__322-ciam-tc-0018",
+        "spread": 2,
+        "grades": {
+          "T08": 0,
+          "T09": 2
+        },
+        "query_id": "syn-he-19",
+        "query_text": "Un circuit électrique vérifie L·i'(t) + R·i(t) = E, où L, R et E sont des constantes positives. Résous cette équation différentielle, sachant que i(0) = 0.",
+        "content_type": "theory",
+        "heading": "Décharge d'un condensateur dans un circuit RC",
+        "topic": "2. Applications",
+        "rank_hybrid": 5,
+        "retrieved_by": [
+          "bm25",
+          "hybrid",
+          "instructional"
+        ]
+      },
+      {
+        "pair_id": "syn-multi-09__194-ciam-tc-0008",
+        "spread": 2,
+        "grades": {
+          "T09": 0,
+          "T10": 2
+        },
+        "query_id": "syn-multi-09",
+        "query_text": "Étude complète de la fonction f(x) = x·ln x sur ]0;+infini[ : ensemble de définition, limites en 0+ et en +infini, dérivée, tableau de variation.",
+        "content_type": "theory",
+        "heading": "Limites en l'infini d'une fonction polynôme et d'une fonction rationne e",
+        "topic": "Notions de base",
+        "rank_hybrid": null,
+        "retrieved_by": [
+          "bm25"
+        ]
+      },
+      {
+        "pair_id": "syn-multi-09__214-ciam-tc-0052",
+        "spread": 2,
+        "grades": {
+          "T09": 3,
+          "T10": 1
+        },
+        "query_id": "syn-multi-09",
+        "query_text": "Étude complète de la fonction f(x) = x·ln x sur ]0;+infini[ : ensemble de définition, limites en 0+ et en +infini, dérivée, tableau de variation.",
+        "content_type": "example",
+        "heading": "Étude de la fonction $f: x \\mapsto \\frac{1}{\\sqrt{x^2+1}}$",
+        "topic": "Fonctions dérivées > Fonctions irrationnelles",
+        "rank_hybrid": 7,
+        "retrieved_by": [
+          "bm25",
+          "hybrid",
+          "instructional"
+        ]
+      },
+      {
+        "pair_id": "syn-multi-09__214-ciam-tc-0065",
+        "spread": 2,
+        "grades": {
+          "T09": 3,
+          "T10": 1
+        },
+        "query_id": "syn-multi-09",
+        "query_text": "Étude complète de la fonction f(x) = x·ln x sur ]0;+infini[ : ensemble de définition, limites en 0+ et en +infini, dérivée, tableau de variation.",
+        "content_type": "theory",
+        "heading": "Dérivée et sens de variation",
+        "topic": "Fonctions dérivées > Fonctions trigonométriques",
+        "rank_hybrid": 6,
+        "retrieved_by": [
+          "hybrid"
+        ]
+      },
+      {
+        "pair_id": "syn-multi-09__214-ciam-tc-0069",
+        "spread": 2,
+        "grades": {
+          "T09": 3,
+          "T10": 1
+        },
+        "query_id": "syn-multi-09",
+        "query_text": "Étude complète de la fonction f(x) = x·ln x sur ]0;+infini[ : ensemble de définition, limites en 0+ et en +infini, dérivée, tableau de variation.",
+        "content_type": "theory",
+        "heading": "Ensemble de définition",
+        "topic": "Fonctions dérivées > Fonctions trigonométriques",
+        "rank_hybrid": 9,
+        "retrieved_by": [
+          "bm25",
+          "hybrid"
+        ]
+      },
+      {
+        "pair_id": "syn-multi-09__256-ciam-tc-0049",
+        "spread": 2,
+        "grades": {
+          "T09": 3,
+          "T10": 1
+        },
+        "query_id": "syn-multi-09",
+        "query_text": "Étude complète de la fonction f(x) = x·ln x sur ]0;+infini[ : ensemble de définition, limites en 0+ et en +infini, dérivée, tableau de variation.",
+        "content_type": "theory",
+        "heading": "Ensemble do deserve",
+        "topic": "Fonctions comportant exp > Exemples d'études de fonctions",
+        "rank_hybrid": null,
+        "retrieved_by": [
+          "bm25"
+        ]
+      },
+      {
+        "pair_id": "syn-multi-09__bac-2024-maths-serie-c-0007",
+        "spread": 2,
+        "grades": {
+          "T09": 3,
+          "T10": 1
+        },
+        "query_id": "syn-multi-09",
+        "query_text": "Étude complète de la fonction f(x) = x·ln x sur ]0;+infini[ : ensemble de définition, limites en 0+ et en +infini, dérivée, tableau de variation.",
+        "content_type": "theory",
+        "heading": "Partie I",
+        "topic": "(unscoped)",
+        "rank_hybrid": null,
+        "retrieved_by": [
+          "dense"
+        ]
+      },
+      {
+        "pair_id": "syn-multi-10__214-ciam-tc-0053",
+        "spread": 2,
+        "grades": {
+          "T01": 2,
+          "T10": 0
+        },
+        "query_id": "syn-multi-10",
+        "query_text": "Étude de la fonction f(x) = (x + 1)·e^(-x) sur R : limites en +infini et -infini, dérivée, sens de variation, tableau de variation.",
+        "content_type": "theory",
+        "heading": "Dérivée et sens de variation",
+        "topic": "Fonctions dérivées > Fonctions irrationnelles",
+        "rank_hybrid": null,
+        "retrieved_by": [
+          "bm25"
+        ]
+      }
+    ]
+  },
+  "top_rank_nonrelevant": {
+    "n": 14,
+    "items": [
+      {
+        "pair_id": "bac2025-e2-3__234-ciam-tc-0051",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Calcule l'intégrale de x³·cos(x) de -π à π.",
+        "content_type": "remark",
+        "heading": "Remarque"
+      },
+      {
+        "pair_id": "bac2025-e6__bac-2024-maths-serie-c-0005",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Dans un jeu de fléchettes, atteindre le disque central rapporte 13 points et la couronne 7 points. Un joueur gagne s'il obtient exactement 1000 points. Détermine les combinaisons de fléchettes (nombre de 13 et de 7) permettant d'atteindre 1000 points.",
+        "content_type": "exercise",
+        "heading": "**EXERCICE 4** (4 points)"
+      },
+      {
+        "pair_id": "bac2025-e5__bac-2024-maths-serie-c-0007",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Soit f définie sur [0;+∞[ par f(x) = x(ln x)² + x si x>0 et f(0)=0. Étudie la continuité et la dérivabilité de f en 0, montre que f'(x) = (1 + ln x)² sur ]0;+∞[, dresse son tableau de variation et montre que la courbe admet un point d'inflexion d'abscisse 1/e. Soit (u_n) la suite définie par u_0 = 1/e et u_{n+1} = f(u_n) : étudie sa monotonie, sa convergence et sa limite.",
+        "content_type": "theory",
+        "heading": "Partie I"
+      },
+      {
+        "pair_id": "bac2025-e2-4__172-ciam-tc-0049",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Soit E et F deux événements tels que P(E)=0,1, P(F)=0,05 et P_E(F)=0,2. Calcule P_F(E).",
+        "content_type": "proof",
+        "heading": "Démonstration"
+      },
+      {
+        "pair_id": "syn-he-09__234-ciam-tc-0062",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Résous dans Z le système de congruences : x ≡ 2 [5] et x ≡ 3 [7].",
+        "content_type": "example",
+        "heading": "Résolution de l'équation (3)"
+      },
+      {
+        "pair_id": "syn-234-07__234-ciam-tc-0047",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Calcule la limite en +infini de (ln x)/x, puis la limite en 0+ de x·ln x.",
+        "content_type": "proof",
+        "heading": "Démonstration"
+      },
+      {
+        "pair_id": "syn-194-c1__194-ciam-tc-0033",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "C'est quoi exactement une asymptote ? Et quelle est la différence entre une asymptote verticale, horizontale et oblique ?",
+        "content_type": "remark",
+        "heading": "Remarque"
+      },
+      {
+        "pair_id": "syn-256-01__172-ciam-tc-0062",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Simplifie l'expression A = e^(ln 5) + e^(2 ln 3) - e^(ln 4).",
+        "content_type": "solution",
+        "heading": "Solution"
+      },
+      {
+        "pair_id": "syn-6-10__56-ciam-tc-0002",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Le nombre 149 est-il premier ? Justifie ta réponse.",
+        "content_type": "definition",
+        "heading": "Définition et propriétés"
+      },
+      {
+        "pair_id": "syn-he-11__234-ciam-tc-0087",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "En utilisant le petit théorème de Fermat, détermine le reste de la division de 5^100 par 7.",
+        "content_type": "theory",
+        "heading": "Tableau de variation"
+      },
+      {
+        "pair_id": "syn-multi-04__234-ciam-tc-0044",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Calcule l'intégrale de 1 à e de (ln x)/x dx.",
+        "content_type": "theorem",
+        "heading": "Propriétés 2"
+      },
+      {
+        "pair_id": "bac2025-e1-2__bac-2024-maths-serie-c-0007",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Calcule la limite de ln(1+2x)/(3x) lorsque x tend vers 0.",
+        "content_type": "theory",
+        "heading": "Partie I"
+      },
+      {
+        "pair_id": "syn-6-04__6-ciam-tc-0150",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Démontre que pour tout entier naturel n, n³ - n est divisible par 6.",
+        "content_type": "theorem",
+        "heading": "Propriété"
+      },
+      {
+        "pair_id": "syn-multi-05__bac-2024-maths-serie-c-0008",
+        "mean_grade": 0.0,
+        "grades": [
+          0
+        ],
+        "query_text": "Calcule l'aire du domaine compris entre la courbe de f(x) = e^(-x), l'axe des abscisses et les droites x = 0 et x = 1.",
+        "content_type": "theory",
+        "heading": "Partie II"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "pair_id": "syn-he-08__256-ciam-tc-0052",
+      "annotator": "T02",
+      "relevance": 3,
+      "notes": "répond à la première partie de la question"
+    },
+    {
+      "pair_id": "syn-he-08__256-ciam-tc-0058",
+      "annotator": "T02",
+      "relevance": 3,
+      "notes": "répond à la deuxième partie de la question"
+    },
+    {
+      "pair_id": "syn-276-03__276-ciam-tc-0030",
+      "annotator": "T02",
+      "relevance": 1,
+      "notes": "fraction*"
+    },
+    {
+      "pair_id": "bac2025-e4__172-ciam-tc-0036",
+      "annotator": "T08",
+      "relevance": 2,
+      "notes": "Solution dispersée"
+    }
+  ]
+}

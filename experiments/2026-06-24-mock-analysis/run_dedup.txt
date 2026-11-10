@@ -1,0 +1,16 @@
+
+=== Agreement (H3) ===
+  Krippendorff alpha — ordinal: 0.091 | nominal: 0.046
+  units: 1429 (257 multi-rated) | raters: 10
+  [2-rater] exact 28.6% · adjacent 70.1% · weighted kappa 0.103
+
+=== Retrieval metrics (judged queries: 91) ===
+  variant         recall@5    ndcg@5 recall@10   ndcg@10       mrr
+  bm25               0.321     0.518     0.564     0.576     0.723
+  dense              0.330     0.501     0.562     0.563     0.691
+  hybrid             0.348     0.533     0.627     0.612     0.743
+  instructional      0.335     0.524     0.335     0.411     0.744
+
+=== Hypotheses (delta) ===
+  H1_hybrid_vs_dense: recall@10 +0.065 · ndcg@10 +0.049 · mrr +0.052
+  H2_instructional_vs_hybrid: recall@10 -0.292 · ndcg@10 -0.202 · mrr +0.001

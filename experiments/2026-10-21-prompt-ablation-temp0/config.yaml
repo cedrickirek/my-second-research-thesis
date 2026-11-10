@@ -1,0 +1,30 @@
+# Re-run of the June prompt ablation at temperature 0 (June ran at API default = 1.0)
+experiment: prompt-ablation-temp0
+date: 2026-10-21
+model: claude-sonnet-4-6        # the system's generator (src/generation/client.py:17)
+temperature: 0
+max_tokens: 1024
+repeats: 3                      # temperature 0 is near- but not fully deterministic
+prompts:
+  V1_lenient: copied verbatim from experiments/2026-06-01-baseline-smoke-test/prompt_ablation.py
+  V2_strict: src/generation/prompts.py SYSTEM_PROMPT
+  V3_hard: copied verbatim from experiments/2026-06-01-baseline-smoke-test/prompt_ablation.py
+examples:
+  known_error:
+    chunk_id: 6-ciam-tc-0048
+    corruption: '\le -> \ge  (|b| <= |a| becomes the false |b| >= |a|)'
+    question: "Si b divise a (a et b étant des entiers relatifs non nuls), que peut-on dire de la comparaison entre |b| et |a| ?"
+  unknown_error:
+    chunk_id: bac-2022-maths-tc-0007
+    corruption: '"25 cm" -> "24 cm"  (tile size; the model cannot know the original)' 
+    question: "Dans l'exercice sur la salle du foyer des jeunes, quelles sont les dimensions du sol à carreler ?"
+  clean:
+    chunk_id: 6-ciam-tc-0045
+    corruption: none
+    question: "Quand dit-on qu'un entier b divise un entier relatif a ?"
+decision_rule: |
+  Fixed before running. A prompt passes an example only if all 3 repeats pass.
+  - known_error: the main answer states |b| >= |a| (faithful) AND a separate note flags the error.
+  - unknown_error: the main answer states 24 cm (faithful). A flag is not expected; recorded, not scored.
+  - clean: correct answer from the extract AND no error flag (no false alarm).
+  Winner = the prompt that passes all three. If none does, V2 stays as an unvalidated choice and the thesis says so.

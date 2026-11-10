@@ -1,0 +1,11 @@
+{
+  "n_chunks": 514,
+  "n_runs": 2,
+  "n_calls": 1028,
+  "model": "claude-opus-4-8",
+  "prompt_id": "81a7d8a86e0c2008",
+  "system_prompt_tokens": 369,
+  "cost_usd_cached_batch": 1.3,
+  "cost_usd_naive_no_cache_no_batch": 4.32,
+  "note": "Heuristic at 3.5 chars/token (\u00b1~20%); the run logs exact usage."
+}
